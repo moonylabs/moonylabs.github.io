@@ -1,0 +1,736 @@
+
+::: warning ⚠️ Confidential & Under Construction
+**This site contains confidential information and is currently under construction.**
+
+The content may include placeholder text, incomplete sections, and information that is subject to change. Please treat this documentation as confidential material until the final version is released.
+:::
+
+## Moony Protocol
+
+![Placeholder](/placeholder-color.png)
+
+Moony is a decentralized monetary protocol designed as a digital public good. It provides open access to financial participation, enables trustless peer-to-peer value exchange, and establishes a composable foundation for a decentralized global economy.
+
+At the core of the protocol is an immutable onchain smart contract deployed on the Solana blockchain by Moony Labs, LLC. that deterministically governs the distribution of a fixed-supply digital asset through a proof-of-liquidity mechanism, without discretionary control or centralized coordination.
+
+
+
+
+
+
+---
+
+### Moony (MNY)
+
+Moony (MNY) is the native digital asset of the Moony protocol, designed to enable permissionless payments between participants without intermediaries.
+
+::: tip 🚀 Smart Contract Addresses
+
+<DeploymentInfo />
+
+:::
+
+
+Transactions with MNY do not require approval from any centralized authority and cannot be stopped, reversed, or filtered by third parties. This trustless design ensures that participants retain full custody and control over their funds at all times. As a result, MNY enables censorship-resistant exchange of value and remains accessible to anyone, anywhere in the world, without discrimination or geographic restriction.
+
+![Placeholder](/placeholder-color.png)
+
+Moony has a fixed maximum supply of 21 million units, an immutable constraint that cryptographically ensures the protocol’s long-term economic integrity. There is no mechanism by which new units can ever be created, guaranteeing that the total supply remains permanently capped.
+
+This fixed supply protects Moony from monetary debasement, distinguishing it from traditional fiat currencies, whose issuance can be arbitrarily expanded by central banks or governments, leading to the long-term erosion of purchasing power through inflation.
+
+By removing the risk of discretionary supply expansion, the Moony protocol establishes a stable foundation for a decentralized economic system to flourish. Its fixed supply enforces scarcity without trust and enables economic coordination without permission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+### Reserve Contract
+
+The Moony Reserve Contract is the trustless mechanism through which all MNY enters circulation. Rather than relying on discretionary allocation, private sales, or centralized control, the entire MNY supply is held in a smart contract that issues tokens according to transparent, immutable rules. This ensures that every unit of MNY is acquired on equal terms, with no special access or preferential treatment.
+
+
+
+::: tip 🚀 Reserve Contract Addresses
+
+<ReserveAddresses />
+
+:::
+
+
+
+
+
+
+
+
+
+#### How It Works
+
+![Placeholder](/placeholder-color.png)
+
+When a user sends USDF (a dollar-backed stablecoin issued by Flipcash Inc.) to the Reserve Contract, the protocol calculates a price using a deterministic bonding curve. It mints the corresponding amount of Moony (MNY) and transfers it directly to the user’s wallet. The USDF is retained onchain as protocol liquidity, ensuring every unit of circulating Moony is backed by verifiable capital.
+
+To redeem Moony, users send MNY back to the Reserve Contract. The protocol returns USDF at the current redemption rate, again determined by the bonding curve. Pricing is updated in real time and applied automatically with each transaction.
+
+This two-way mechanism allows users to enter and exit the system freely, without centralized intermediaries or approvals. Issuance and redemption occur directly through the contract’s internal logic, ensuring predictable and transparent outcomes for all participants.
+
+
+
+
+
+
+
+#### Design Principles
+
+- **Immutable:** The Moony Reserve Contract cannot be altered once deployed. There are no admin keys, upgrade paths, or special permissions. The issuance, pricing, and redemption logic is permanently encoded at the smart contract level, ensuring no future changes or governance actions can override it. 
+
+- **Permissionless:** Anyone can interact with the Moony Reserve Contract directly from their own wallet. There are no intermediaries, whitelists, or identity checks required. The system is open to all participants equally.
+
+- **Non-custodial:** The Moony Reserve Contract does not hold user assets in a custodial manner. Users deposit USDF and receive MNY, or return MNY to redeem USDF, with no third party controlling the funds. All interactions occur directly between the user and the contract.
+
+- **Transparent:** All supply, liquidity, and pricing data is recorded on the Solana blockchain. Every interaction with the Moony Reserve Contract is publicly visible and verifiable. The system is fully auditable and provable in real time.
+
+#### Infrastructure Provider
+
+The Moony Reserve Contract was deployed by Moony Labs, LLC. using infrastructure developed by Flipcash Inc., an independent third-party company. Flipcash developed the Reserve Contract's architecture, which Moony Labs deployed to the Solana blockchain, enabling Moony's launch as an independent protocol.
+
+While Flipcash provided the initial infrastructure, it does not maintain control over Moony or its reserve contract, nor can it alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+
+Moony is not limited to any platform. The Reserve Contract is open to all developers and integrators, and MNY can be used across any app, wallet, or protocol that supports Solana. This ensures maximum composability, interoperability, and future-proof adoption.
+
+
+### Proof of Liquidity
+
+![Placeholder](/placeholder-color.png)
+
+Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented entirely through its immutable on-chain reserve contract. Under this model, new tokens enter circulation exclusively in exchange for verifiable on‑chain capital, ensuring issuance is transparent, market‑driven, and free from discretionary control.
+
+Each MNY token is issued in exchange for USDF, a dollar-pegged stablecoin issued by Flipcash Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants.
+
+The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+
+#### Key Properties
+
+- **Permissionless:** Anyone can mint MNY by interacting directly with the reserve contract, with no approvals or intermediaries required.
+- **Proof of Liquidity:** Capital used to mint MNY remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
+- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
+
+#### Capital-Based Mining
+
+Moony's Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint MNY by depositing USDF directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
+
+This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new MNY but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
+
+By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
+
+This process is:
+
+- **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
+- **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony's economy.
+- **Energy Efficient**: By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana's low-carbon infrastructure.
+
+#### Fee Model {#fee-model}
+
+Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost‑efficient entry into the ecosystem. Redemptions, selling MNY back to the Reserve Contract for USDF, incur a 1% fee.
+
+This mechanism serves two purposes:
+
+- **Security**: The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user's trade.
+- **Infrastructure Support**: Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/complete-documentation#infrastructure-provider)).
+
+The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
+
+
+
+### Bonding Curve
+
+![Placeholder](/placeholder-color.png)
+
+Moony's price discovery is governed by an on‑chain bonding curve, a deterministic mathematical function encoded within the Reserve Contract. The curve dynamically adjusts the token's spot price based on the current absolute supply of tokens in circulation.
+
+This mechanism applies symmetrically to both minting and redemption. When new MNY is issued, the curve calculates the cost in USDF according to current circulating supply; when MNY is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces MNY's scarcity over time.
+
+#### Core Principles
+
+- **Price Increases with Demand:** As users mint MNY from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
+
+- **Price Also Governs Redemption:** When users redeem MNY for USDF through the Reserve, the curve calculates the return value based on the current supply position.
+
+- **Predictable and Transparent:** Pricing is fully deterministic, enforced by on‑chain logic, and free from discretionary control.
+
+- **Aligned Incentives:** Early adopters gain an advantage, while later participants strengthen network liquidity through higher‑priced entries.
+
+#### Model Parameters
+
+The bonding curve follows a continuous exponential function encoded in the Reserve Contract. The curve defines the **spot price** (the instantaneous price per token) at any given supply level. When you buy or sell tokens, the Reserve Contract calculates the total cost or value by integrating this spot price function over the supply range of your transaction.
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Spot Price Function</h4>
+</div>
+<div class="formula-content">
+</div>
+<div class="formula-where-section">
+<p class="formula-where">The spot price is the price per token at a specific supply level. This formula gives you the instantaneous price at supply <strong>S</strong>:</p>
+<p class="formula-where"><strong>Where:</strong></p>
+<ul>
+<li><strong>R'(S)</strong> is the spot price (price per token) at supply <strong>S</strong></li>
+<li><strong>S</strong> is the current circulating supply (absolute number of tokens)</li>
+<li><strong>a</strong>, <strong>b</strong>, and <strong>c</strong> are curve constants that define the exponential shape</li>
+</ul>
+</div>
+</div>
+
+$$R'(S) = a \times b \times e^{c \times S}$$
+
+##### Curve Constants
+
+The Reserve Contract uses three constants that work together to define the exponential curve's shape and boundaries. These constants are carefully calibrated to ensure the curve starts at $0.01 USDF per token (near zero supply) and approaches $1,000,000 USDF per token (at maximum supply of 21,000,000 tokens).
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Curve Constants</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item" data-constant="a">
+<span class="constant-label">Constant a</span>
+<div class="constant-value-wrapper">
+<span class="constant-value-math"></span>
+</div>
+</div>
+<div class="curve-constant-item" data-constant="b">
+<span class="constant-label">Constant b</span>
+<div class="constant-value-wrapper">
+<span class="constant-value-math"></span>
+</div>
+</div>
+<div class="curve-constant-item" data-constant="c">
+<span class="constant-label">Constant c</span>
+<div class="constant-value-wrapper">
+<span class="constant-value-math"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="formula-where-section">
+<p class="formula-where"><strong>How they work together:</strong></p>
+<ul>
+<li><strong>Constant a</strong> acts as a base multiplier that scales the entire curve. It sets the overall magnitude of prices across the curve.</li>
+<li><strong>Constant b</strong> works with constant a to establish the starting price point. The product <strong>a × b</strong> determines the price when supply approaches zero (approximately $0.01 USDF).</li>
+<li><strong>Constant c</strong> controls the exponential growth rate. A larger <strong>c</strong> means the price increases more rapidly as supply grows. This constant determines how steeply the curve rises and ensures it reaches the target ending price at maximum supply.</li>
+<li>Together, <strong>a × b × e^(c × S)</strong> creates an exponential function where price grows exponentially with supply, starting low and accelerating as more tokens are minted.</li>
+</ul>
+</div>
+</div>
+
+$a = 11400.230149967394933471$
+
+$b = 0.000000877175273521$
+
+$c = 0.000000877175273521$
+
+##### Cost Calculation
+
+When you buy or sell tokens, you're not buying at a single price point—you're buying across a range of supply levels. The Reserve Contract calculates the total cost by integrating the spot price function over the supply range of your transaction. These formulas are executed on-chain by the Reserve Contract for every mint and redemption transaction, ensuring deterministic and transparent pricing.
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Cost to Purchase Tokens</h4>
+</div>
+<div class="formula-content">
+</div>
+<div class="formula-where-section">
+<p class="formula-where">To buy tokens, you pay the integral of the spot price from your starting supply to your ending supply. This gives you the total USDF cost for the tokens you're purchasing:</p>
+<p class="formula-where"><strong>Where:</strong></p>
+<ul>
+<li><strong>S_current</strong> is the supply before your purchase</li>
+<li><strong>S_new</strong> = S_current + tokens_to_buy (the supply after your purchase)</li>
+<li>The formula integrates the spot price function over this range</li>
+</ul>
+</div>
+</div>
+
+$$\text{Cost} = \frac{a \times b}{c} \times \left(e^{c \times S_{\text{new}}} - e^{c \times S_{\text{current}}}\right)$$
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Value from Redeeming Tokens</h4>
+</div>
+<div class="formula-content">
+</div>
+<div class="formula-where-section">
+<p class="formula-where">When redeeming tokens, you receive USDF based on the integral of the spot price over the supply range you're removing. The calculation is the same as purchasing, but in reverse:</p>
+<p class="formula-where"><strong>Where:</strong></p>
+<ul>
+<li><strong>S_current</strong> is the supply before your redemption</li>
+<li><strong>S_new</strong> = S_current - tokens_to_sell (the supply after your redemption)</li>
+<li>You receive USDF equal to the integral of the spot price over this range</li>
+</ul>
+<p class="formula-where" style="margin-top: 16px; font-size: 0.875rem; color: #6b7280;"><em>Note: Redemptions incur a 1% fee. The formula above shows the gross USDF value before the fee is applied. See the <a href="#fee-model" style="color: #10b981; text-decoration: underline;">Fee Model</a> section for details.</em></p>
+</div>
+</div>
+
+$$\text{Value} = \frac{a \times b}{c} \times \left(e^{c \times S_{\text{current}}} - e^{c \times S_{\text{new}}}\right)$$
+
+##### Curve Properties
+
+This model guarantees deterministic, transparent price progression. The exponential structure rewards early participation with lower entry costs, while later entrants contribute proportionally more liquidity to the Reserve, ensuring the system scales in proportion to demand.
+
+The exponential curve ensures predictable price behavior:
+
+<div class="formula-card">
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Exponential Growth</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Price increases exponentially as supply grows, rewarding early participants with lower entry costs</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Continuous Function</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">The curve is continuous and smooth, with no discrete jumps or sudden price changes</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Deterministic Pricing</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Every price point is mathematically determined and transparent, enforced by on-chain logic</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Scalable Liquidity</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Later entrants contribute proportionally more liquidity, ensuring the system scales with demand</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+#### Market Dynamics
+
+The Reserve Contract provides the primary pricing mechanism for MNY, but price discovery also occurs on secondary markets. This creates a dynamic relationship between the bonding curve and market prices.
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Pricing Mechanisms</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Primary Pricing</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Reserve Contract bonding curve determines mint and redemption prices</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Secondary Markets</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Price discovery on centralized exchanges and peer-to-peer platforms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Arbitrage Mechanism</h4>
+</div>
+<div class="formula-content">
+<p>The Reserve's transparent pricing creates an arbitrage anchor that keeps market prices aligned with the bonding curve:</p>
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Market Price Above Curve</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Users can mint from the Reserve at a lower cost, creating downward pressure on market price</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Market Price Below Curve</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Arbitrageurs buy on the market and redeem to the Reserve, creating upward pressure on market price</span>
+</div>
+</div>
+</div>
+</div>
+<div class="formula-where-section">
+<p class="formula-where">This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.</p>
+</div>
+</div>
+
+
+
+## Moony Economy
+
+
+
+![Placeholder](/placeholder-color.png)
+
+Moony is designed as a foundational asset for a decentralized, composable financial system. Operating at the protocol layer, it enables seamless integration into applications, platforms, and commerce flows without reliance on centralized intermediaries. Governed by immutable smart contracts, its architecture is fully permissionless, supporting innovation without gatekeeping and allowing diverse actors to coordinate through aligned economic incentives.
+
+Each integration extends Moony's utility and introduces it to new user segments. These touchpoints compound over time, increasing transactional volume, deepening liquidity, and unlocking additional use cases. Developers gain composability and demand for their integrations; users benefit from broader accessibility; and communities can build localized economic systems anchored in a shared, credible asset.
+
+Moony serves as shared infrastructure across a growing ecosystem of independent participants. As adoption expands, network effects accelerate: each new implementation reinforces Moony's role as a medium of exchange. By anchoring incentives across an interoperable landscape, Moony facilitates a more open, resilient, and scalable digital economy, one not defined by institutional control, but by permissionless coordination and shared value creation.
+
+#### Potential Use Cases
+
+Moony's design naturally supports a broad range of use cases as adoption grows:
+
+- **Peer-to-Peer Payments:** Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive MNY anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.
+
+::: tip 
+Learn more about how Moony can be used for P2P Payments. 
+:::
+
+- **Micropayments:** MNY's divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can't handle. From pay‑per‑use digital content to streaming payments, MNY unlocks new economic models that previously required centralized platforms with high fees.
+
+::: tip 
+Learn more about how Moony can be used for Micropayments. 
+:::
+
+- **Decentralized Finance (DeFi):** MNY can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use MNY in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.
+
+::: tip 
+Learn more about how Moony can be used in (DeFi).
+:::
+
+These examples demonstrate Moony's flexibility as a foundational layer, rather than a tool confined to a single application or vertical. Its long-term utility will be defined by open participation and the ingenuity of independent developers, communities, and platforms. Engineered for composability and permissionless integration, Moony's ecosystem expands organically as new participants build on top of it. Each integration strengthens its position as a decentralized public good, resilient, adaptive, and free from centralized control.
+
+#### Community Participation
+
+Moony's long-term growth depends not on central coordination, but on the initiative and creativity of its community. Developers, creators, educators, organizers, and everyday users all play a role in shaping the ecosystem. Whether by building new integrations, hosting local meetups, contributing tutorials, or simply transacting in MNY, each action strengthens the network and reinforces its value as a public good.
+
+This permissionless model invites diverse forms of participation. Communities can form around shared values, cultural identities, or local needs, building micro-economies that thrive on open infrastructure and collective ownership. The Moony ecosystem is not governed from the top down; it is grown from the ground up.
+
+::: tip click-here-tip
+[Explore ways to get involved in the Moony community](/resources/community)
+:::
+
+### P2P Payments
+
+![Placeholder](/placeholder-color.png)
+
+Peer-to-peer (P2P) payments represent Moony's most direct utility: enabling value transfer between individuals without intermediaries. By combining a credibly fixed supply with on-chain settlement, Moony delivers global digital cash with finality, transparency, and negligible fees.
+
+#### Why It Matters
+
+Legacy payment systems rely on layered intermediaries such as banks, processors, or card networks, each introducing cost, latency, and potential for control or exclusion. Transactions can be delayed, reversed, or denied entirely, with entire regions excluded from participation.
+
+Moony's P2P model is different:
+
+- **Direct settlement:** Transfers occur directly on-chain between sender and recipient, with no custodial middleman.
+- **Trust minimization:** Settlement rules are enforced by code, not dependent on counterparties.
+- **Censorship resistance:** Valid transactions are processed so long as participants can access the network.
+- **Global accessibility:** Anyone with internet access and a compatible wallet can participate.
+
+#### Global Scalability
+
+To make P2P viable at scale, both cost and throughput must support everyday usage. These characteristics make Moony suitable for daily transactions, not just high-value transfers. Moony launches on Solana to meet these requirements:
+
+- **Low Fees:** Typical transfers cost fractions of a cent, with fees known at submission.
+- **Throughput & latency:** Solana's high-performance network supports rapid confirmations without congestion.
+- **Composability:** The same infrastructure powering P2P also enables micropayments, streaming, and automated settlement.
+
+Together, these properties make Moony credible for daily payments, not just occasional high‑value transactions.
+
+#### Financial Inclusion
+
+Billions of people remain underserved, or entirely excluded, by traditional payment systems. In many regions, the absence of reliable banking infrastructure leaves individuals unable to store value securely, send money across borders, or participate in even the most basic forms of commerce. 
+
+Where banking does exist, high fees, slow settlement times, and rigid requirements place meaningful participation out of reach for many. Cross‑border remittances can take days to arrive, cost double‑digit percentages in fees, and are often impractical for small amounts, limiting economic mobility and reinforcing systemic barriers.
+
+Moony addresses these challenges:
+
+- **Open access:** Anyone with a smartphone can receive Moony without bank accounts or gatekeepers.
+- **Remittance:** Affordable, near-instant settlement for cross-border payments.
+- **Commerce:** Merchants and creators can accept payments without card fees or chargebacks.
+- **Availability:** Operates 24/7, unaffected by weekends or holidays, like traditional systems.
+
+Moony's peer‑to‑peer architecture offers a different path: one that bypasses the bottlenecks of legacy finance and extends open participation to anyone with a mobile device. By removing intermediaries and leveraging low‑cost, high‑speed blockchain settlement, Moony makes direct digital transactions viable at a scale and inclusivity level traditional rails cannot match.
+
+#### Interoperable Access
+
+Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fully interoperable and not bound to any single interface or platform. From the moment it is minted, Moony is part of a broader composable ecosystem where users and developers can freely move, store, and integrate the asset without permission. This open design not only reinforces Moony's role as decentralized digital cash but also guarantees that its utility can expand organically across a variety of independent applications.
+
+Several key properties enable this interoperability:
+
+- **Wallet compatibility:** Any Solana‑compatible wallet that supports SPL tokens can hold and transfer Moony. Users are free to manage their balances in the interface of their choice, rather than being locked into a single custodial or proprietary app.
+- **Composability:** Moony can be added to payment apps, point‑of‑sale systems, bots, and custodial or non‑custodial services with minimal friction. Developers can plug into Moony the same way they support any other SPL token, allowing it to circulate naturally through the ecosystem.
+
+Because Moony is permissionless and composable by design, its peer‑to‑peer utility is not constrained to a single application. The token can flow seamlessly between wallets, payment interfaces, and future onchain services, creating a foundation for global accessibility and financial inclusion as the network of integrations grows.
+
+#### Flipcash Infrastructure
+
+Moony and its reserve contract were deployed by Moony Labs, LLC. using infrastructure developed by Flipcash Inc., an independent third-party company. Neither Moony Labs nor Flipcash maintain control over Moony or its reserve contract, nor can they alter the protocol's issuance, pricing, or supply mechanisms. These parameters are defined entirely by Moony's immutable smart contract, ensuring the protocol remains open and permissionless from the start.
+
+At launch, Flipcash provides the first public interface for interacting directly with the Moony Reserve Contract. Through its mobile app, users can seamlessly buy MNY or sell MNY for USDF. Flipcash also offers an industry-leading, trustless peer-to-peer payments experience with zero fees for P2P sends, giving users a seamless way to transact with MNY.
+
+##### Flipcash Enables Users To:
+
+- **Interact With Reserve:** Seamlessly convert between Moony and USDF through an intuitive interface.
+- **Send P2P Payments:** Instantly use Moony as digital cash where you can hand it to someone or send it as a link, with zero fees for peer-to-peer transfers.
+
+::: tip click-here-tip
+[Download Flipcash Mobile Application](https://www.flipcash.com)
+:::
+
+While Flipcash provides the first front end to access the Moony reserve contract, MNY is not limited to any single platform. Designed as a digital public good, MNY can be integrated into any third party platform, protocol, wallet, or app, ensuring broad utility, composability, and adoption.
+
+#### Code Payments VM Infrastructure
+
+Flipcash leverages Code Payments' Virtual Machine (VM) infrastructure to enable efficient, zero-fee peer-to-peer payments. The VM system enables batch processing and optimization of payments, making micropayments and frequent transfers economically viable.
+
+These VM addresses are part of Flipcash's payment infrastructure and are not required for direct interaction with the Moony Reserve Contract. Users can mint and redeem MNY directly through the Reserve Contract without using these VM addresses.
+
+<VMAddresses />
+
+### Micropayments
+
+![Placeholder](/placeholder-color.png)
+
+Micropayments, transactions valued in cents or fractions of a cent, have historically been impractical under legacy financial rails. Percentage‑based fees, multi‑day settlement cycles, and reliance on centralized intermediaries make low‑value transfers uneconomical, cutting off entire categories of digital commerce. 
+
+These limitations have forced creators, developers, and small businesses into centralized platforms that aggregate payments, take substantial fees, and control audience relationships. Moony removes these barriers. Built for high‑volume, low‑value transactions, it combines extreme divisibility with near‑zero fees to make micropayments viable at a global scale. By doing so, it unlocks entirely new economic behaviors that were previously impossible or uneconomical.
+
+#### Why It Matters
+
+Micropayments are not simply smaller versions of ordinary transactions, they are a missing building block of the modern internet economy. The inability to move tiny amounts of value efficiently has shaped the digital landscape in ways that limit innovation and inclusion:
+
+- **Centralization**: Without cost‑effective direct payment rails, creators and small businesses are forced into platforms that bundle transactions, take large fees, and control access to audiences.
+
+- **Subscriptions**: The impracticality of per‑use billing forces consumers into subscription models, paying for more than they actually use.
+
+- **Bottlenecks**: Entire categories of applications, such as real‑time metering, per‑unit API calls, or machine‑to‑machine commerce, remain underdeveloped because payment systems cannot handle the volume or economics they require.
+
+#### Moony's Advantage
+
+Moony's architecture is purpose‑built to make micropayments economically viable at global scale. The token's extreme divisibility allows transactions measured in fractions of a cent, ideal for tipping, micro‑rewards, metered services, and other fine‑grained use cases. 
+
+Every transfer settles on the Solana blockchain with trust‑minimized execution and irreversible finality, eliminating reliance on banks, processors, or escrow services. Solana's high‑throughput design keeps fees to a fraction of a cent and confirms transactions in seconds, free from banking hours or remittance corridors. Low fees are the foundation that make real‑time, granular monetization possible, enabling sustainable small‑value transfers that expand markets, drive innovation, and open the digital economy to all.
+
+#### Potential Applications
+
+Moony's micropayment capabilities enable a wide range of practical and programmable economic models:
+
+Micropayments with Moony open the door to innovative digital and physical interactions, including:
+
+- **Pay-Per-Use:** Unlock content, articles, videos, or AI tools for pennies without recurring subscriptions.
+- **In-App Purchase:** Purchase digital items, upgrades, or event access without credit card integrations.
+- **Streaming Payments:** Transfer value continuously in real time for services like media consumption or cloud computing.
+- **M2M Commerce:** Automate exchange of bandwidth, energy, or data in precise micro‑increments.
+- **Direct Support:** Send low‑fee micro‑tips to artists, streamers, or writers without intermediary platform fees.
+
+By combining scarce, divisible digital cash with low‑cost, high‑throughput settlement, Moony turns micropayments from an abstract ideal into a practical, composable building block for a decentralized, internet‑native economy.
+
+### Capital Markets
+
+![Placeholder](/placeholder-color.png)
+
+Decentralized Finance (DeFi) represents the foundation of internet capital markets, a global financial system built on open, programmable infrastructure. In this environment, lending, borrowing, trading, and yield generation occur directly through smart contracts without the need for banks or traditional intermediaries. 
+
+Rather than trusting institutions, participants rely on transparent, verifiable code. Value moves globally, at all hours, without gatekeepers. This shift is not just technological. Internet capital markets mark a cultural transformation, offering an open alternative to legacy finance, driven by code, capital, and community.
+
+#### Why It Matters
+
+Traditional finance relies on layers of centralized institutions such as banks, clearinghouses, and brokers that enforce access restrictions, add costs, and slow down settlement.
+
+This system creates multiple frictions:
+
+- **Limited access:** Many people globally cannot open bank accounts or meet minimum requirements for financial services.
+- **Delay and inefficiency:** Cross‑border settlements and loans can take days, incurring high fees along the way.
+- **Opacity and custodial risk:** Users must trust institutions to remain solvent, secure, and fair.
+
+DeFi eliminates these barriers by replacing human discretion with transparent, automated smart contracts. Anyone with an internet connection can access financial services, and asset flows can be audited, verified, and settled in real time.
+
+For Moony, DeFi is not an optional side use case, it is the natural extension of its core ethos: a trust‑minimized, publicly verifiable, and composable asset that empowers global users without intermediaries.
+
+#### Moony's Advantage
+
+Moony possesses three core attributes that make it a natural fit for decentralized finance:
+
+- **Composable and Permissionless:** Moony can integrate with any Solana‑based DeFi protocol without approvals or gatekeeping, allowing it to serve as collateral, liquidity in AMMs/DEXs, or a medium of exchange. Each new integration compounds Moony's utility and strengthens the network effect.
+- **Transparent and Predictable Supply:** With a fixed supply of 21,000,000 and a fully on‑chain reserve contract, Moony provides deterministic issuance and verifiable scarcity. This reduces collateral risk, avoids inflationary surprises, and builds confidence in Moony as a trust‑minimized, reliable asset.
+- **SPL Standard and Interoperability:** As an SPL token, Moony is natively compatible with the Solana DeFi ecosystem. It can move seamlessly between wallets, DEXs, lending protocols, and automated strategies, enabling fluid composability and frictionless circulation across the network.
+
+Together, these properties make Moony a credible building block for DeFi, ready to flow through lending markets, liquidity pools, and programmable financial products without reliance on any single platform.
+
+#### Potential Applications
+
+Moony's utility in DeFi will expand organically as adoption grows and protocols integrate the asset. 
+
+Potential use cases include:
+
+- **Liquidity Pools and Swaps:** MNY can be deposited into automated market makers (AMMs) or decentralized exchanges (DEXs), allowing permissionless swaps and contributing to price discovery and market depth.
+- **Collateralized Lending and Borrowing:** Holders can supply Moony as collateral to borrow stablecoins or other assets. This allows users to unlock liquidity without selling, while protocols gain access to a scarce, verifiable asset.
+- **Yield Opportunities and Incentive Programs:** Liquidity mining, staking rewards, or protocol incentives can encourage Moony holders to actively participate in ecosystem growth, reinforcing both liquidity and visibility.
+
+These use cases illustrate how one asset can power multiple layers of the financial stack, enabling both basic interactions and complex, high‑order products.
+
+---
+
+MNY's integration into DeFi is a natural expression of its design principles. By combining verifiable scarcity, SPL‑standard interoperability, and permissionless integration, MNY has the potential to become a durable building block for decentralized finance. Each DeFi integration strengthens the ecosystem, extending MNY's role from peer‑to‑peer digital cash into a global, self‑sustaining network for internet capital markets.
+
+
+
+## Moony Network
+
+![Placeholder](/placeholder-color.png)
+
+The Moony network exists as a decentralized, permissionless system shaped through the independent participation of a global community. Its growth, resilience, and direction do not arise from any single organization, coordinating body, or governing authority, but from the collective actions of individuals and groups who choose to build with it, use it, teach it, integrate it, and exchange with it.
+
+Moony is designed as open digital infrastructure. Participation is not gated by identity, status, or approval. Innovation is permissionless. Communities form organically around shared needs, shared values, and shared utility. As the network expands through real world use and independent contribution, its underlying asset reflects that expanding adoption. In this way, Moony aligns individual initiative with collective value creation without relying on centralized management or control.
+
+This structure is what allows Moony to function as a true digital public good. The network is not operated as a corporate product or directed through top-down coordination. Instead, it evolves through open collaboration, distributed ownership, and permissionless participation across a wide range of stakeholders.
+
+
+
+
+### Stakeholders
+
+The Moony Network is composed of many independent participants who engage with the protocol at different layers and in different ways. These stakeholders are not organized under a central authority and do not operate under unified direction. Each participant engages according to their own incentives, interests, and capacities within an open, permissionless system.
+
+Some stakeholders contribute through technical development and infrastructure. Others build applications, integrate Moony into products and services, create educational resources, form communities, develop cultural narratives, or simply use Moony as a medium of exchange. These roles are not fixed. They often overlap and evolve as the network grows and new forms of participation emerge.
+
+No single stakeholder group holds inherent control over the protocol. Influence within the network arises from adoption, contribution, and voluntary coordination rather than ownership, hierarchy, or governance authority. This structure allows the Moony Network to remain open-ended, censorship-resistant, and resilient across changing conditions.
+
+#### Network Contribution
+
+The Moony network is not composed of fixed roles, titles, or permissions. Instead, it is shaped through open, overlapping modes of participation. Individuals and organizations engage with the system in different ways depending on their skills, intent, and context. A single participant may be a user, a developer, a merchant, and a community organizer over the lifetime of their involvement. These identities are not assigned. They emerge naturally through action.
+
+There is no formal boundary between who is considered a "user" and who is considered a "builder." Anyone can move fluidly between modes of participation as the network evolves and as their relationship to the system changes. This structural openness is foundational to Moony's decentralization. The network does not grow through enrollment, designation, or appointment. It grows through voluntary engagement.
+
+Participation takes many forms, including but not limited to:
+
+- **Transact:** Sending and receiving Moony in peer to peer exchange, daily payments, tipping, remittances, or micro transactions between individuals and services.
+
+- **Build:** Developing wallets, applications, integrations, developer tools, analytics, and supporting infrastructure that increases usability, security, and reach.
+
+- **Integrate:** Adding Moony as a supported currency within platforms, marketplaces, payment flows, content systems, games, and financial services.
+
+- **Educate:** Producing documentation, tutorials, guides, events, research, and learning resources that help others understand, adopt, and safely use Moony.
+
+- **Organize:** Forming communities, regional groups, online forums, and thematic networks that coordinate local adoption, outreach, and support.
+
+- **Express:** Shaping culture through storytelling, visual design, media, art, memes, and narratives that give Moony social meaning and shared identity.
+
+Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
+
+This structure allows Moony to grow organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
+
+Economic participation flows naturally from these contributions without requiring coordinated management. As Moony is used, integrated, and circulated, liquidity deepens, utility expands, and real-world demand emerges through voluntary exchange. No single group directs this process. It is the aggregate result of many independent decisions interacting through the same open protocol.
+
+In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
+
+#### Moony Labs
+
+Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. From the moment the protocol was published on-chain, it became an autonomous system that anyone may use, study, integrate, extend, or build upon without permission. The protocol was not created to be operated as a company product, nor to remain under the control, direction, or discretion of its deploying entity. Rather, its design assumes independence from the outset, with the deployment itself serving as the sole foundational contribution of Moony Labs to the network.
+
+Prior to deployment, Moony Labs did not conduct a funding round, issue equity, sell allocations, or enter into contractual obligations tied to the future performance of the protocol. It published Moony without venture financing, token pre-sales, or investor-linked performance expectations. Moony Labs does not hold any allocation of the MNY token supply, does not receive proceeds from the reserve, and does not participate in the economic flows of the system. It does not financially benefit from the adoption, use, or market activity of MNY in any form. The protocol was published without a retained stake.
+
+Following deployment, Moony Labs does not participate in the ongoing operation of the network. It does not control token supply, operate privileged keys, or retain any capacity to modify, pause, upgrade, or otherwise interfere with the protocol. The Moony protocol is fully immutable and self-executing from the moment it is published. There are no backdoors, no administrative controls, and no upgrade authorities.
+
+This separation is not an absence of responsibility. It is the mechanism by which Moony becomes neutral. By relinquishing ongoing control, Moony Labs ensures that Moony does not derive its legitimacy, direction, or economic behavior from any single organization. The network is free to evolve through the independent actions of its participants rather than through centralized coordination.
+
+To support transparency and reproducibility, moonylabs.com points to the public GitHub repositories and technical documentation associated with the original deployment. These resources exist as an open reference for developers, researchers, and builders. While Moony Labs may continue to host these materials for as long as it reasonably can, they are fundamentally part of the open commons. Anyone is free to mirror, archive, or fork them at any time.
+
+At present, Moony Labs does not conduct marketing, community management, ecosystem coordination, protocol governance, or financial services. It does not operate social media accounts, collect user data, issue grants, or act as a governing authority. Its non-operational posture reflects a deliberate design choice to ensure that no ongoing managerial effort is required for Moony to exist, grow, or function.
+
+This structure ensures that Moony does not depend on continued performance, promotion, or stewardship from its publisher. No future development, maintenance, marketing, or economic return is promised or implied. From the moment of publication, Moony exists as a permissionless public good. Its value, culture, and long-term trajectory are shaped not by Moony Labs, but by the broader community of developers, users, educators, businesses, and independent contributors who choose to participate in its ecosystem.
+
+### Public Good
+
+Moony is a public good, sustained and advanced by communities that choose to engage with it. While deployed by Moony Labs, LLC., the protocol operates independently without any central control or governance. Its evolution is shaped not by central mandates, but by collective action on a shared foundation.
+
+Developers may integrate Moony into applications and infrastructure. Creators may produce educational or cultural content. Merchants may adopt it as a medium of exchange. New organizations may form to expand awareness and accessibility. Every contribution, whether technical, educational, economic, or cultural, extends Moony's reach and resilience.
+
+The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
+
+
+
+
+**Getting Started:**
+
+Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
+
+### Brand Identity
+
+Moony's visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces.
+
+The name Moony blends two ideas: moon and money. It draws from the playful, aspirational language of internet culture, where assets are said to "go to the moon", while also pointing directly to Moony's function as a new form of digital value.
+
+The name is intentionally simple, memorable, and shareable. Its memetic resonance makes it easy to adopt in conversation, while its grounding in principled, open value infrastructure signals credibility and long‑term vision. Moony is as much a cultural asset as it is a technical one.
+
+#### Typography
+
+The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, high legibility, and modern character. Its lowercase styling conveys approachability and simplicity, aligning with Moony's open and memetic ethos while preserving institutional clarity. This typeface should be used when reproducing the Moony logotype or developing visual assets that reference the brand name in stylized form.
+
+#### Icon Design
+
+Moony's icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
+
+- **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony's namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
+
+- **Binary Reference:** When rotated, the icon resembles a "1" and "0," subtly invoking binary code. This visual echo underscores Moony's digital origin and inherent programmability, positioning it as a native asset of internet capital markets. 
+
+- **Market Semantics:** In trading contexts, the icon can be interpreted as denoting "over," "above," or directional movement, suggesting upward price momentum along Moony's bonding curve. This reflects its dynamic economic model, where adoption, integration, and transaction flow drive emergent market value.
+
+The symbol is optimized for clarity at small sizes, performing reliably in both light and dark themes. Its simplicity ensures broad adaptability, while its layered references reinforce Moony's identity as both a technical primitive and an enduring digital brand.
+
+#### Usage Guidelines
+
+Moony can be represented using the Unicode character ⍜ (U+235C "APL Functional Symbol Circle Underbar") to indicate quantities, similar to how the $ symbol denotes U.S. dollars.
+
+**Usage Examples:**
+
+* ⍜100 for one hundred Moony tokens
+* ⍜0.5 for half a Moony token
+* "Tip them ⍜2 for the post"
+* "The pool contains ⍜8,250"
+
+#### Download Logos
+
+These resources are provided to make it simple for developers, designers, and community members to integrate Moony's identity into wallets, applications, media, and promotional materials without friction.
+
+::: tip click-here-tip
+[Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
+:::
+
+---
+&nbsp;
+&nbsp;
+::: warning
+This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain by Moony Labs, LLC. The protocol operates autonomously and cannot be altered or controlled by any party, including Moony Labs, LLC. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
+:::

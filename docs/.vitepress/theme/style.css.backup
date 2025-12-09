@@ -1,0 +1,1454 @@
+/**
+ * Apple-Style Moony Documentation
+ * Clean, minimal design with neutral colors and light pink accents
+ */
+
+/* ================
+   APPLE-STYLE VARIABLES
+   ================ */
+:root {
+  /* Light pink palette replacing blues */
+  --vp-c-brand-1: #FF69B4;
+  --vp-c-brand-2: #FF1493;
+  --vp-c-brand-3: #DC143C;
+  --vp-c-sponsor: var(--vp-c-text-2);
+  
+  /* Clean neutral palette */
+  --moony-primary: #1d1d1f;
+  --moony-secondary: #515154;
+  --moony-accent: #FF69B4;
+  --moony-light-gray: #f5f5f7;
+  --moony-medium-gray: #86868b;
+  --moony-border: #d2d2d7;
+  
+  /* Enhanced spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
+
+.dark {
+  --vp-c-brand-1: #FF69B4;
+  --vp-c-brand-2: #FF1493;
+  --vp-c-brand-3: #DC143C;
+  
+  --moony-primary: #f5f5f7;
+  --moony-secondary: #a1a1a6;
+  --moony-accent: #FF69B4;
+  --moony-light-gray: #1d1d1f;
+  --moony-medium-gray: #86868b;
+  --moony-border: #424245;
+}
+
+/* ================
+   FULL PAGE GRADIENT BACKGROUND
+   ================ */
+.Layout,
+.VPApp,
+.VPContent,
+body {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%, 
+    rgba(250, 250, 252, 0.99) 30%, 
+    rgba(248, 248, 250, 1) 70%,
+    rgba(255, 255, 255, 1) 100%) !important;
+  min-height: 100vh;
+}
+
+.dark .Layout,
+.dark .VPApp,
+.dark .VPContent,
+.dark body {
+  background: linear-gradient(135deg, 
+    rgba(24, 24, 27, 0.98) 0%, 
+    rgba(18, 18, 21, 0.99) 30%, 
+    rgba(15, 15, 17, 1) 70%,
+    rgba(9, 9, 11, 1) 100%) !important;
+}
+
+/* Subtle pink glow overlay for entire page */
+.Layout::before,
+.VPApp::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top center, 
+    rgba(255, 105, 180, 0.04) 0%, 
+    transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content is above the overlay */
+.VPNav,
+.VPContent,
+.VPHero,
+.vp-doc {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================
+   PREMIUM HERO SECTION STYLING
+   ================ */
+.VPHero {
+  padding: 100px 40px 80px !important;
+  background: transparent !important;
+  position: relative;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 85vh !important;
+}
+
+.VPHero .container {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+  position: relative;
+  z-index: 1;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr 350px !important;
+  gap: 100px !important;
+  align-items: center !important;
+  padding: 0 40px !important;
+}
+
+.VPHero .main {
+  text-align: left !important;
+  margin: 0 !important;
+  max-width: 700px !important;
+  padding: 0 20px 0 0 !important;
+  order: 1;
+}
+
+.VPHero .text {
+  font-size: 5rem !important;
+  line-height: 1.1 !important;
+  color: var(--moony-primary) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 32px !important;
+  background: linear-gradient(135deg, var(--moony-primary), var(--moony-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 8px 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
+
+.VPHero .tagline {
+  font-size: 1.125rem !important;
+  line-height: 1.3 !important;
+  color: var(--moony-secondary) !important;
+  font-weight: 400 !important;
+  margin-bottom: 56px !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  opacity: 0.9;
+  white-space: nowrap !important;
+}
+
+.VPHero .image {
+  margin-bottom: 0 !important;
+  position: relative;
+  background: transparent !important;
+  background-color: transparent !important;
+  order: 2;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.VPHero .image img {
+  max-width: 280px !important;
+  height: auto !important;
+  opacity: 1 !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  filter: 
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
+    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.1))
+    drop-shadow(0 0 20px rgba(255, 105, 180, 0.08))
+    brightness(1.6)
+    contrast(0.6)
+    saturate(0.3) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  mix-blend-mode: normal !important;
+}
+
+.VPHero .image img:hover {
+  filter: 
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
+    drop-shadow(0 4px 12px rgba(255, 105, 180, 0.15))
+    drop-shadow(0 0 24px rgba(255, 105, 180, 0.12))
+    brightness(1.6)
+    contrast(0.6)
+    saturate(0.3) !important;
+}
+
+/* Minimal gradient overlay to match hero text - Light Mode */
+.VPHero .image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, 
+    rgba(29, 29, 31, 0.05) 0%, 
+    rgba(81, 81, 84, 0.03) 100%);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+}
+
+.VPHero .image:hover::after {
+  opacity: 0.15;
+}
+
+/* Dark mode gradient overlay */
+.dark .VPHero .image::after {
+  background: linear-gradient(135deg, 
+    rgba(245, 245, 247, 0.8) 0%, 
+    rgba(161, 161, 166, 0.6) 100%);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+}
+
+.dark .VPHero .image:hover::after {
+  opacity: 0.85;
+}
+
+.VPHero .actions {
+  margin-top: 56px !important;
+  gap: 20px !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+}
+
+.VPHero .action {
+  margin: 0 !important;
+}
+
+.VPHero .action .VPButton {
+  padding: 18px 40px !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  border-radius: 16px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  min-width: 160px !important;
+  text-align: center !important;
+  border: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.VPHero .action .VPButton.brand {
+  background: linear-gradient(135deg, #FF69B4, #FF1493, #DC143C) !important;
+  color: white !important;
+  box-shadow: 
+    0 4px 20px rgba(255, 105, 180, 0.4),
+    0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.VPHero .action .VPButton.brand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.VPHero .action .VPButton.brand:hover::before {
+  left: 100%;
+}
+
+.VPHero .action .VPButton.brand:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 
+    0 8px 32px rgba(255, 105, 180, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.VPHero .action .VPButton.alt {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid rgba(255, 105, 180, 0.2) !important;
+  color: var(--moony-primary) !important;
+  backdrop-filter: blur(20px) !important;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+.VPHero .action .VPButton.alt:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: var(--moony-accent) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+}
+
+.dark .VPHero .action .VPButton.alt {
+  background: rgba(29, 29, 31, 0.9) !important;
+  border: 2px solid rgba(255, 105, 180, 0.3) !important;
+  color: var(--moony-primary) !important;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+.dark .VPHero .action .VPButton.alt:hover {
+  background: rgba(41, 41, 45, 0.95) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+
+
+/* ================
+   CLEAN TYPOGRAPHY
+   ================ */
+.vp-doc h1 {
+  color: var(--moony-primary);
+  font-weight: 700;
+  font-size: 2.25rem;
+  letter-spacing: -0.025em;
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--moony-border);
+  border-top: none !important;
+  padding-bottom: var(--space-md);
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.vp-doc h1:first-of-type {
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+.vp-doc h2 {
+  color: var(--moony-primary);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2:first-of-type {
+  margin-top: 0 !important;
+}
+
+.vp-doc h3 {
+  color: var(--moony-secondary);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+/* ================
+   GLOBAL JUSTIFICATION
+   ================ */
+.vp-doc p,
+.vp-doc li,
+.vp-doc td,
+.vp-doc th,
+.vp-doc blockquote {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.7;
+  color: var(--moony-secondary);
+  font-size: 1rem;
+}
+
+/* ================
+   ENHANCED CONTENT SECTIONS
+   ================ */
+.vp-doc {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 24px !important;
+  padding: 40px 40px 60px !important;
+  margin: 0px auto 20px !important;
+  max-width: 1000px !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark .vp-doc {
+  background: rgba(24, 24, 27, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 1px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ================
+   ENHANCED TIP BOX STYLING
+   ================ */
+.vp-doc .custom-block.tip {
+  background: linear-gradient(135deg, 
+    rgba(255, 105, 180, 0.08) 0%, 
+    rgba(255, 105, 180, 0.05) 100%) !important;
+  border: 2px solid rgba(255, 105, 180, 0.2) !important;
+  color: var(--moony-secondary);
+  padding: 32px !important;
+  border-radius: 20px !important;
+  margin: 40px 0 !important;
+  font-size: 1.0625rem !important;
+  line-height: 1.7 !important;
+  max-width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(255, 105, 180, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(20px);
+}
+
+.dark .vp-doc .custom-block.tip {
+  background: linear-gradient(135deg, 
+    rgba(255, 105, 180, 0.12) 0%, 
+    rgba(255, 105, 180, 0.08) 100%) !important;
+  color: var(--moony-secondary);
+  border-color: rgba(255, 105, 180, 0.3) !important;
+  box-shadow: 
+    0 8px 32px rgba(255, 105, 180, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.vp-doc .custom-block.tip > .custom-block-title {
+  display: none;
+}
+
+.vp-doc .custom-block.tip a {
+  color: var(--moony-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1px;
+}
+
+.vp-doc .custom-block.tip a:hover {
+  color: var(--vp-c-brand-2);
+  border-bottom-color: var(--moony-accent);
+  transform: translateY(-1px);
+}
+
+/* ================
+   CLEAN LIST STYLING
+   ================ */
+.vp-doc ul {
+  margin: var(--space-lg) 0;
+}
+
+.vp-doc li {
+  margin-bottom: var(--space-sm);
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.vp-doc strong {
+  color: var(--moony-primary);
+  font-weight: 600;
+}
+
+/* ================
+   SIDEBAR CONNECTED TO FOOTER
+   ================ */
+/* Sidebar ends naturally when footer appears */
+.Layout.has-sidebar .VPSidebar,
+.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(245, 245, 247, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--moony-border) !important;
+  
+  /* Sidebar sticks to top but ends when footer comes into view */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  height: calc(100vh - var(--vp-nav-height, 60px) - 60px) !important;
+  overflow-y: auto !important;
+  z-index: 1 !important;
+  align-self: flex-start !important;
+}
+
+.dark .Layout.has-sidebar .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-right-color: #424245 !important;
+}
+
+
+
+.dark .VPSidebar,
+.dark .VPSidebar[class*="VPSidebar"],
+.dark .Layout .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar {
+  background: rgba(29, 29, 31, 0.95) !important;
+  border-right: 1px solid #424245 !important;
+}
+
+.VPSidebarItem .text {
+  font-weight: 500;
+  color: var(--moony-secondary);
+  font-size: 0.95rem;
+}
+
+.VPSidebarItem.is-active > .item > .text {
+  color: var(--moony-accent);
+  font-weight: 600;
+}
+
+.VPSidebarItem .link:hover .text {
+  color: var(--moony-primary);
+}
+
+/* ================
+   CLEAN NAVIGATION - MAXIMUM SPECIFICITY FOR ALL PAGES
+   ================ */
+
+/* Override VitePress navigation background with maximum specificity */
+.VPNav[class*="VPNav"],
+.Layout .VPNav[class*="VPNav"],
+.Layout.is-home .VPNav[class*="VPNav"],
+.Layout.has-sidebar .VPNav[class*="VPNav"],
+.VPApp .VPNav[class*="VPNav"],
+body .VPNav[class*="VPNav"],
+html .VPNav[class*="VPNav"],
+#app .VPNav[class*="VPNav"] {
+  backdrop-filter: blur(20px) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid var(--moony-border) !important;
+  border-bottom-color: var(--moony-border) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.dark .VPNav[class*="VPNav"],
+.dark .Layout .VPNav[class*="VPNav"],
+.dark .Layout.is-home .VPNav[class*="VPNav"],
+.dark .Layout.has-sidebar .VPNav[class*="VPNav"],
+.dark .VPApp .VPNav[class*="VPNav"],
+.dark body .VPNav[class*="VPNav"],
+.dark html .VPNav[class*="VPNav"],
+.dark #app .VPNav[class*="VPNav"] {
+  background: rgba(29, 29, 31, 0.95) !important;
+  background-color: rgba(29, 29, 31, 0.95) !important;
+  border-bottom: 1px solid #424245 !important;
+  border-bottom-color: #424245 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Force border color consistency across all possible VitePress selectors */
+.VPNav,
+.VPNav *,
+.VPNav::before,
+.VPNav::after {
+  border-color: var(--moony-border) !important;
+}
+
+.dark .VPNav,
+.dark .VPNav *,
+.dark .VPNav::before,
+.dark .VPNav::after {
+  border-color: #424245 !important;
+}
+
+/* Target all possible VitePress navigation containers */
+.VPNav .VPNavBar[class*="VPNavBar"],
+.VPNav .container[class*="container"],
+.Layout .VPNavBar[class*="VPNavBar"],
+.Layout.has-sidebar .VPNavBar[class*="VPNavBar"],
+.VPApp .VPNavBar[class*="VPNavBar"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Specifically target logo/title area to eliminate border stacking */
+.VPNavBarTitle[class*="VPNavBarTitle"],
+.VPNavBarTitle .container[class*="container"],
+.VPNavBarTitle .content[class*="content"],
+.VPNavBarTitle .logo,
+.VPNavBarTitle .title,
+.VPNavBarTitle .image,
+.VPNavBarTitle img,
+.VPNavBarTitle svg,
+.Layout .VPNavBarTitle[class*="VPNavBarTitle"],
+.Layout.has-sidebar .VPNavBarTitle[class*="VPNavBarTitle"],
+.VPNavBarTitle *,
+.VPNavBarTitle::before,
+.VPNavBarTitle::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.VPNavBarTitle .title {
+  font-weight: 600;
+  color: var(--moony-primary);
+}
+
+.VPNavBarMenu[class*="VPNavBarMenu"],
+.VPNavBarMenu .container[class*="container"],
+.VPNavBarMenu .content[class*="content"],
+.Layout .VPNavBarMenu[class*="VPNavBarMenu"],
+.Layout.has-sidebar .VPNavBarMenu[class*="VPNavBarMenu"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
+.VPNavBarMenuGroup .container[class*="container"],
+.VPNavBarMenuGroup .content[class*="content"],
+.Layout .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"],
+.Layout.has-sidebar .VPNavBarMenuGroup[class*="VPNavBarMenuGroup"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Specific navigation link backgrounds only */
+.VPNavBarMenuLink[class*="VPNavBarMenuLink"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.VPNavBarMenuText[class*="VPNavBarMenuText"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.VPNavBarHamburger[class*="VPNavBarHamburger"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Preserve theme toggle and social links functionality */
+.VPNavBarAppearance[class*="VPNavBarAppearance"],
+.VPNavBarSocialLinks[class*="VPNavBarSocialLinks"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.VPNavBarAppearance .VPSwitch,
+.VPNavBarAppearance .toggle,
+.VPNavBarAppearance button {
+  background: var(--vp-c-bg) !important;
+  background-color: var(--vp-c-bg) !important;
+}
+
+.VPNavBarSocialLinks a,
+.VPNavBarSocialLinks .VPSocialLink {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* Nuclear option - override any possible background with CSS custom properties */
+:root {
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.dark:root {
+  --vp-nav-bg-color: rgba(29, 29, 31, 0.95) !important;
+}
+
+/* Apply the custom property everywhere */
+.VPNav,
+.VPNav * {
+  --vp-c-bg: var(--vp-nav-bg-color) !important;
+}
+
+/* ================
+   CONTENT ENHANCEMENTS
+   ================ */
+.vp-doc {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.vp-doc .header-anchor {
+  color: var(--moony-accent);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.vp-doc .header-anchor:hover {
+  opacity: 1;
+}
+
+.vp-doc code {
+  background: rgba(142, 142, 147, 0.12);
+  color: var(--moony-accent);
+  padding: 0.3em 0.5em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.vp-doc pre {
+  border-radius: 16px;
+  border: 1px solid var(--moony-border);
+  background: var(--moony-light-gray);
+  font-size: 0.9rem;
+}
+
+.dark .vp-doc pre {
+  background: var(--moony-light-gray);
+}
+
+/* ================
+   RESPONSIVE DESIGN
+   ================ */
+@media (max-width: 960px) {
+  .VPHero {
+    padding: 100px 20px 120px !important;
+    min-height: 70vh !important;
+  }
+  
+  .VPHero .text {
+    font-size: 4rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.375rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 220px !important;
+  }
+  
+  .VPHero .action .VPButton {
+    padding: 16px 32px !important;
+    font-size: 1.0625rem !important;
+  }
+  
+  .vp-doc {
+    padding: 50px 30px !important;
+    margin: 30px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 80px 20px 100px !important;
+    min-height: 60vh !important;
+  }
+  
+  .VPHero .text {
+    font-size: 3.25rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.25rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 180px !important;
+  }
+  
+  .vp-doc {
+    padding: 40px 25px !important;
+    margin: 25px 15px !important;
+  }
+  
+  .vp-doc h1 {
+    font-size: 2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+  
+  .vp-doc .custom-block.tip {
+    padding: 24px !important;
+    margin: 30px 0 !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+    padding: 40px 16px 60px !important;
+  }
+  
+  .VPHero .text {
+    font-size: 2.25rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 120px !important;
+  }
+  
+  .VPHero .action .VPButton {
+    padding: 14px 28px !important;
+    font-size: 1rem !important;
+    min-width: 140px !important;
+  }
+  
+  .vp-doc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .vp-doc .custom-block.tip {
+    font-size: 0.9rem;
+    padding: var(--space-md);
+    line-height: 1.5;
+  }
+
+  .vp-doc p,
+  .vp-doc li {
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.375rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+
+}
+
+/* ================
+   SUBTLE ANIMATIONS
+   ================ */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================
+   APPLE-STYLE POLISH
+   ================ */
+.VPContent {
+  background: var(--vp-c-bg);
+}
+
+.vp-doc table {
+  border-collapse: collapse;
+  margin: var(--space-xl) 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--moony-border);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--moony-border);
+}
+
+.vp-doc th {
+  background: var(--moony-light-gray);
+  font-weight: 600;
+  color: var(--moony-primary);
+}
+
+/* ================
+   SMOOTH SCROLLING
+   ================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================
+   FOCUS STYLES
+   ================ */
+.vp-doc a:focus,
+.VPButton:focus {
+  outline: 2px solid var(--moony-accent);
+  outline-offset: 2px;
+}
+
+/* ================
+   NUCLEAR BORDER COLOR FIX - MAXIMUM SPECIFICITY
+   ================ */
+
+/* Override all possible VitePress border color variables */
+:root.dark {
+  --vp-c-divider: #424245 !important;
+  --vp-c-border: #424245 !important;
+  --vp-c-gutter: #424245 !important;
+  --vp-sidebar-border-color: #424245 !important;
+  --vp-nav-border-color: #424245 !important;
+}
+
+/* Nuclear approach - force exact same border on both elements */
+html.dark body .VPApp .Layout .VPNav[class*="VPNav"],
+html.dark body .VPApp .Layout.has-sidebar .VPNav[class*="VPNav"],
+html.dark body .VPApp .VPNav[class*="VPNav"],
+.dark[class] .VPNav[class*="VPNav"],
+.dark[class] .Layout[class] .VPNav[class*="VPNav"] {
+  border-bottom: 1px solid #424245 !important;
+  border-bottom-color: #424245 !important;
+  box-shadow: 0 1px 0 0 #424245 !important;
+}
+
+html.dark body .VPApp .Layout .VPSidebar[class*="VPSidebar"],
+html.dark body .VPApp .Layout.has-sidebar .VPSidebar[class*="VPSidebar"],
+.dark[class] .VPSidebar[class*="VPSidebar"],
+.dark[class] .Layout[class] .VPSidebar[class*="VPSidebar"] {
+  border-right: 1px solid #424245 !important;
+  border-right-color: #424245 !important;
+  box-shadow: 1px 0 0 0 #424245 !important;
+}
+
+/* Force border color on all possible border-related pseudo-elements */
+.dark .VPNav::before,
+.dark .VPNav::after,
+.dark .VPSidebar::before,
+.dark .VPSidebar::after {
+  border-color: #424245 !important;
+  background-color: #424245 !important;
+}
+
+/* Ensure clean PNG transparency for hero images */
+.VPHero .image,
+.VPHero .image *,
+.VPHero .VPImage,
+.VPHero .VPImage *,
+.VPHero img,
+.Layout .VPHero .image,
+.Layout .VPHero .image * {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Remove any potential background inheritance */
+.VPHero .image::before,
+.VPHero .image::after {
+  display: none !important;
+}
+
+/* Alternative stronger gradient effect - uncomment to use instead */
+/*
+.VPHero .image img {
+  filter: 
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.2))
+    sepia(1)
+    hue-rotate(300deg)
+    saturate(2)
+    brightness(1.2) !important;
+}
+
+.VPHero .image img:hover {
+  filter: 
+    drop-shadow(0 12px 32px rgba(255, 105, 180, 0.3))
+    sepia(1)
+    hue-rotate(300deg)
+    saturate(2.2)
+    brightness(1.3)
+    contrast(1.2) !important;
+}
+*/
+
+/* For a more subtle text-matching effect, use this instead */
+/*
+.VPHero .image img {
+  filter: 
+    drop-shadow(0 8px 24px rgba(255, 105, 180, 0.15))
+    grayscale(0.3)
+    sepia(0.4)
+    hue-rotate(300deg)
+    saturate(1.4)
+    brightness(1.05) !important;
+}
+*/
+
+/* ================
+   RESPONSIVE PREMIUM DESIGN
+   ================ */
+@media (max-width: 960px) {
+  .VPHero {
+    padding: 80px 30px 100px !important;
+    min-height: 70vh !important;
+  }
+  
+  .VPHero .container {
+    grid-template-columns: 1fr !important;
+    gap: 60px !important;
+    max-width: 900px !important;
+    padding: 0 20px !important;
+  }
+  
+  .VPHero .main {
+    text-align: center !important;
+    order: 2;
+    padding: 0 !important;
+  }
+  
+  .VPHero .actions {
+    justify-content: center !important;
+  }
+  
+  .VPHero .image {
+    order: 1;
+  }
+  
+  .VPHero .text {
+    font-size: 4rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.375rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 220px !important;
+  }
+  
+  .VPHero .action .VPButton {
+    padding: 16px 32px !important;
+    font-size: 1.0625rem !important;
+  }
+  
+  .vp-doc {
+    padding: 50px 30px !important;
+    margin: 30px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 60px 20px 80px !important;
+    min-height: 60vh !important;
+  }
+  
+  .VPHero .container {
+    gap: 40px !important;
+  }
+  
+  .VPHero .text {
+    font-size: 3.25rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.25rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 180px !important;
+  }
+  
+  .vp-doc {
+    padding: 40px 25px !important;
+    margin: 25px 15px !important;
+  }
+  
+  .vp-doc h1 {
+    font-size: 2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+  
+  .vp-doc .custom-block.tip {
+    padding: 24px !important;
+    margin: 30px 0 !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+    padding: 40px 16px 60px !important;
+    min-height: 50vh !important;
+  }
+  
+  .VPHero .container {
+    gap: 30px !important;
+  }
+  
+  .VPHero .text {
+    font-size: 2.75rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1.125rem !important;
+  }
+  
+  .VPHero .image img {
+    max-width: 150px !important;
+  }
+  
+  .VPHero .action .VPButton {
+    padding: 14px 28px !important;
+    font-size: 1rem !important;
+    min-width: 140px !important;
+  }
+  
+  .vp-doc {
+    padding: 30px 20px !important;
+    margin: 20px 10px !important;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .vp-doc .custom-block.tip {
+    font-size: 0.95rem !important;
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+
+  .vp-doc p,
+  .vp-doc li {
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.375rem;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+}
+
+/* Remove any separators or horizontal rules above first content */
+.vp-doc hr:first-child,
+.vp-doc .divider:first-child,
+.vp-doc > *:first-child::before {
+  display: none !important;
+}
+
+.vp-doc > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+/* Aggressively remove any borders on h1 elements */
+.vp-doc h1,
+.vp-doc .header-anchor + h1,
+[class*="vp-doc"] h1 {
+  border-top: none !important;
+  border-top-width: 0 !important;
+  border-top-style: none !important;
+}
+
+/* Remove VitePress default h1 top border */
+.VPDoc h1 {
+  border-top: none !important;
+}
+
+/* ================
+   SIDEBAR THAT ENDS BEFORE FOOTER
+   ================ */
+
+/* Simple approach: sidebar sticks but has max height to avoid footer */
+.Layout.has-sidebar .VPSidebar,
+.Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(245, 245, 247, 0.95) !important;
+  backdrop-filter: blur(20px);
+  border-right: 1px solid var(--moony-border) !important;
+  
+  /* Sidebar sticks but stops before footer */
+  position: sticky !important;
+  top: var(--vp-nav-height, 60px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+  z-index: 1 !important;
+}
+
+.dark .Layout.has-sidebar .VPSidebar,
+.dark .Layout.has-sidebar .VPSidebar[class*="VPSidebar"] {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-right-color: #424245 !important;
+}
+
+/* ================
+   FOOTER APPEARS NATURALLY
+   ================ */
+
+/* Footer appears normally on home page */
+.Layout.is-home .VPFooter {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  z-index: auto !important;
+  margin-top: 60px !important;
+}
+
+/* Footer only appears on home page now */
+
+/* Default footer styling for fallback */
+.VPFooter {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(255, 105, 180, 0.1) !important;
+  padding: 60px 40px 40px !important;
+}
+
+.dark .VPFooter {
+  background: rgba(24, 24, 27, 0.95) !important;
+  border-top-color: rgba(255, 105, 180, 0.2) !important;
+}
+
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: var(--moony-primary);
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 12px;
+}
+
+.footer-section a {
+  color: var(--moony-secondary);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-section a:hover {
+  color: var(--moony-accent);
+  border-bottom-color: var(--moony-accent);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.footer-brand-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--moony-primary);
+}
+
+.footer-description {
+  color: var(--moony-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 105, 180, 0.1);
+  border-radius: 8px;
+  color: var(--moony-accent);
+  transition: all 0.3s ease;
+  border-bottom: none !important;
+}
+
+.footer-social a:hover {
+  background: var(--moony-accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 105, 180, 0.1);
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-copyright {
+  color: var(--moony-secondary);
+  font-size: 0.875rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-legal a {
+  color: var(--moony-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--moony-accent);
+}
+
+/* Responsive footer and sidebar */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .VPFooter {
+    padding: 40px 20px 30px !important;
+  }
+  
+  /* Reset sidebar on mobile only */
+  .VPSidebar,
+  .VPSidebar[class*="VPSidebar"],
+  .Layout .VPSidebar,
+  .Layout.has-sidebar .VPSidebar {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    align-self: auto !important;
+  }
+  
+  .VPFooter {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+}

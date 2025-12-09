@@ -1,0 +1,15 @@
+{
+  "name": "moony",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "katex": "^0.16.25",
+    "markdown-it": "^14.1.0",
+    "markdown-it-katex": "^2.0.3",
+    "vitepress": "^1.6.3"
+  }
+}

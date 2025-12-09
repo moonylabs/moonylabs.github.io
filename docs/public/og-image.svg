@@ -1,0 +1,55 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Hot pink gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fdf2f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fce7f3;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hot pink radial glow -->
+    <radialGradient id="pinkGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:0.08" />
+      <stop offset="60%" style="stop-color:#FF1493;stop-opacity:0.04" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Logo color -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d1d1f" />
+      <stop offset="100%" style="stop-color:#515154" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Pink glow overlay -->
+  <rect width="1200" height="630" fill="url(#pinkGlow)"/>
+  
+  <!-- Center the Moony logo -->
+  <g transform="translate(275, 245) scale(1.0)">
+    <g fill="url(#logoGradient)">
+      <!-- Moon icon from logo -->
+      <g>
+        <rect y="125.39" width="112.46" height="15.34"/>
+        <path d="M56.23,112.46c31,0,56.23-25.22,56.23-56.23S87.23,0,56.23,0,0,25.22,0,56.23s25.22,56.23,56.23,56.23ZM56.23,14.88c22.8,0,41.35,18.55,41.35,41.35s-18.55,41.35-41.35,41.35S14.88,79.03,14.88,56.23,33.43,14.88,56.23,14.88Z"/>
+      </g>
+      <!-- "moony" text from logo -->
+      <g>
+        <path d="M540.49,107.99v-44.25c0-14.84-12.03-26.88-26.88-26.88s-26.88,12.03-26.88,26.88v44.25h-17.31v-44.25c0-24.4,19.78-44.19,44.19-44.19,24.41,0,44.19,19.78,44.19,44.19v44.25h-17.31Z"/>
+        <path d="M146.98,111.12v-54.06c0-18.99,15.39-34.38,34.38-34.38,10.24,0,19.43,4.47,25.72,11.57,6.3-7.1,15.49-11.57,25.72-11.57,18.99,0,34.38,15.39,34.38,34.38v54.06h-17.31v-54.06c0-9.43-7.64-17.07-17.07-17.07s-17.07,7.64-17.07,17.07v54.06h-17.31v-54.06c0-9.43-7.64-17.07-17.07-17.07s-17.07,7.64-17.07,17.07v54.06h-17.31Z"/>
+        <path d="M346.74,66.9c0-14.84-12.03-26.88-26.88-26.88s-26.88,12.03-26.88,26.88,12.03,26.88,26.88,26.88,26.88-12.03,26.88-26.88ZM364.05,66.9c0,24.41-19.78,44.19-44.19,44.19s-44.19-19.78-44.19-44.19,19.78-44.19,44.19-44.19,44.19,19.78,44.19,44.19Z"/>
+        <path d="M441.66,66.9c0-14.84-12.03-26.88-26.88-26.88s-26.88,12.03-26.88,26.88,12.03,26.88,26.88,26.88,26.88-12.03,26.88-26.88ZM458.98,66.9c0,24.41-19.78,44.19-44.19,44.19s-44.19-19.78-44.19-44.19,19.78-44.19,44.19-44.19,44.19,19.78,44.19,44.19Z"/>
+        <path d="M585.64,25.98v45.65c-.55,31.59,47.33,32.46,47.88.91V25.98h17.31v46.79s0,23.77,0,23.77c0,24.41-19.78,44.19-44.19,44.19h-26.92v-17.31h26.92c11.07,0,20.58-6.69,24.7-16.26-6.52,4.07-14.24,6.36-22.48,6.22-22.73-.4-40.84-19.1-40.53-41.82V25.98h17.31Z"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Subtle decorative elements -->
+  <circle cx="150" cy="100" r="3" fill="#FF69B4" opacity="0.3"/>
+  <circle cx="1050" cy="120" r="2" fill="#FF1493" opacity="0.4"/>
+  <circle cx="200" cy="530" r="2.5" fill="#DC143C" opacity="0.25"/>
+  <circle cx="1000" cy="510" r="3" fill="#FF69B4" opacity="0.3"/>
+  
+</svg>
