@@ -624,11 +624,11 @@ This structure is what allows Moony to function as a true digital public good. T
 
 ### Stakeholders
 
-The Moony Network is composed of many independent participants who engage with the protocol at different layers and in different ways. These stakeholders are not organized under a central authority and do not operate under unified direction. Each participant engages according to their own incentives, interests, and capacities within an open, permissionless system.
+The Moony network is composed of many independent participants who engage with the protocol at different layers and in different ways. These stakeholders are not organized under a central authority and do not operate under unified direction. Each participant engages according to their own incentives, interests, and capacities within an open, permissionless system.
 
 Some stakeholders contribute through technical development and infrastructure. Others build applications, integrate Moony into products and services, create educational resources, form communities, develop cultural narratives, or simply use Moony as a medium of exchange. These roles are not fixed. They often overlap and evolve as the network grows and new forms of participation emerge.
 
-No single stakeholder group holds inherent control over the protocol. Influence within the network arises from adoption, contribution, and voluntary coordination rather than ownership, hierarchy, or governance authority. This structure allows the Moony Network to remain open-ended, censorship-resistant, and resilient across changing conditions.
+No single stakeholder group holds inherent control over the protocol. Influence within the network arises from adoption, contribution, and voluntary coordination rather than ownership, hierarchy, or governance authority. This structure allows the Moony network to remain open-ended, censorship-resistant, and resilient across changing conditions.
 
 #### Network Contribution
 
