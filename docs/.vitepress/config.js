@@ -1,13 +1,14 @@
 export default {
   title: 'Moony Labs LLC',
-  titleTemplate: '%s | Moony Labs LLC',
+  titleTemplate: false, // We'll handle titles manually in transformHead
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
   transformHead: ({ pageData, siteData }) => {
     const pageTitle = pageData.frontmatter?.title || pageData.title
-    const title = pageTitle && pageTitle !== siteData.title
-      ? `${pageTitle} | Moony Labs LLC`
+    // Format as "Moony Labs LLC | Page Title" or just "Moony Labs LLC" for homepage
+    const title = pageTitle && pageTitle !== siteData.title && pageData.relativePath !== 'index.md'
+      ? `Moony Labs LLC | ${pageTitle}`
       : 'Moony Labs LLC'
     const description = pageData.frontmatter?.description || siteData.description
     const path = pageData.relativePath === 'index.md' 
@@ -16,6 +17,7 @@ export default {
     const url = `https://moonylabs.com${path}`
     
     return [
+      ['title', {}, title],
       ['meta', { property: 'og:title', content: title }],
       ['meta', { property: 'og:description', content: description }],
       ['meta', { property: 'og:url', content: url }],
