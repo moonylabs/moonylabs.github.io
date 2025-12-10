@@ -78,7 +78,7 @@ export default {
             // For other pages, try to get title from page
             const pageTitle = document.querySelector('h1')?.textContent?.trim()
             if (pageTitle && pageTitle !== 'Moony Labs') {
-              document.title = \`Moony Labs | \${pageTitle}\`
+              document.title = 'Moony Labs | ' + pageTitle
             } else {
               document.title = 'Moony Labs'
             }
