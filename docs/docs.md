@@ -636,9 +636,10 @@ The Moony network is not composed of fixed roles, titles, or permissions. Instea
 
 There is no formal boundary between who is considered a "user" and who is considered a "builder." Anyone can move fluidly between modes of participation as the network evolves and as their relationship to the system changes. This structural openness is foundational to Moony's decentralization. The network does not grow through enrollment, designation, or appointment. It grows through voluntary engagement.
 
-Participation takes many forms, including but not limited to:
-
 <div class="formula-card">
+<div class="formula-header">
+<h4>Participation takes many forms, including but not limited to:</h4>
+</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item">
