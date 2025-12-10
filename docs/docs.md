@@ -641,7 +641,6 @@ There is no formal boundary between who is considered a "user" and who is consid
 <h4>Forms of Participation</h4>
 </div>
 <div class="formula-content">
-<p style="margin-bottom: 1.5rem; color: var(--vp-c-text-2);">Participation takes many forms, including but not limited to:</p>
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item">
 <span class="constant-label">Transact</span>
