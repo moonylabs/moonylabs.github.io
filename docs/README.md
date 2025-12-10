@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/moony-logo.png" alt="Moony Logo" width="300">
+  <img src="public/moony-logo.png" alt="Moony Logo" style="width: 100%; max-width: 100%;">
 </div>
 
 # Moony Documentation
