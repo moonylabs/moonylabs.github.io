@@ -203,9 +203,6 @@ This model redefines mining as a constructive economic activity rather than an e
 By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Capital-Based Mining</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -235,9 +232,6 @@ By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves
 Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost‑efficient entry into the ecosystem. Redemptions, selling MNY back to the Reserve Contract for USDF, incur a 1% fee.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Fee Model</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -270,9 +264,6 @@ Moony's price discovery is governed by an on‑chain bonding curve, a determinis
 This mechanism applies symmetrically to both minting and redemption. When new MNY is issued, the curve calculates the cost in USDF according to current circulating supply; when MNY is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces MNY's scarcity over time.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Core Principles</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -308,9 +299,6 @@ This mechanism applies symmetrically to both minting and redemption. When new MN
 The bonding curve follows a continuous exponential function encoded in the Reserve Contract. The curve defines the **spot price** (the instantaneous price per token) at any given supply level. When you buy or sell tokens, the Reserve Contract calculates the total cost or value by integrating this spot price function over the supply range of your transaction.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Spot Price Function</h4>
-</div>
 <div class="formula-content">
 </div>
 <div class="formula-where-section">
@@ -331,9 +319,6 @@ $$R'(S) = a \times b \times e^{c \times S}$$
 The Reserve Contract uses three constants that work together to define the exponential curve's shape and boundaries. These constants are carefully calibrated to ensure the curve starts at $0.01 USDF per token (near zero supply) and approaches $1,000,000 USDF per token (at maximum supply of 21,000,000 tokens).
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Curve Constants</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item" data-constant="a">
@@ -378,9 +363,6 @@ $c = 0.000000877175273521$
 When you buy or sell tokens, you're not buying at a single price point—you're buying across a range of supply levels. The Reserve Contract calculates the total cost by integrating the spot price function over the supply range of your transaction. These formulas are executed on-chain by the Reserve Contract for every mint and redemption transaction, ensuring deterministic and transparent pricing.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Cost to Purchase Tokens</h4>
-</div>
 <div class="formula-content">
 </div>
 <div class="formula-where-section">
@@ -458,9 +440,6 @@ The exponential curve ensures predictable price behavior:
 The Reserve Contract provides the primary pricing mechanism for MNY, but price discovery also occurs on secondary markets. This creates a dynamic relationship between the bonding curve and market prices.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Pricing Mechanisms</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item">
@@ -612,9 +591,6 @@ Moony's P2P model is different:
 To make P2P viable at scale, both cost and throughput must support everyday usage. These characteristics make Moony suitable for daily transactions, not just high-value transfers. Moony launches on Solana to meet these requirements:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Global Scalability</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -692,9 +668,6 @@ Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fu
 Several key properties enable this interoperability:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Interoperable Access</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -724,9 +697,6 @@ At launch, Flipcash provides the first public interface for interacting directly
 ##### Flipcash Enables Users To:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Flipcash Enables Users To</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -772,9 +742,6 @@ These limitations have forced creators, developers, and small businesses into ce
 Micropayments are not simply smaller versions of ordinary transactions, they are a missing building block of the modern internet economy. The inability to move tiny amounts of value efficiently has shaped the digital landscape in ways that limit innovation and inclusion:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Why It Matters</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -812,9 +779,6 @@ Moony's micropayment capabilities enable a wide range of practical and programma
 Micropayments with Moony open the door to innovative digital and physical interactions, including:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Potential Applications</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -868,9 +832,6 @@ Traditional finance relies on layers of centralized institutions such as banks, 
 This system creates multiple frictions:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Why It Matters</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -904,9 +865,6 @@ For Moony, DeFi is not an optional side use case, it is the natural extension of
 Moony possesses three core attributes that make it a natural fit for decentralized finance:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Moony's Advantage</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -940,9 +898,6 @@ Moony's utility in DeFi will expand organically as adoption grows and protocols 
 Potential use cases include:
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Potential Applications</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
