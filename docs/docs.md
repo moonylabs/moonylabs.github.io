@@ -249,7 +249,7 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling costâ€
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Infrastructure Support</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value" style="text-align: justify; display: block;">Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/docs#infrastructure-provider)).</span>
+<span class="constant-value" style="text-align: justify; display: block;">Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/docs.html#infrastructure-provider)).</span>
 </div>
 </div>
 </div>
