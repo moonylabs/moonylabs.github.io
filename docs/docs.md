@@ -420,7 +420,7 @@ Moony's design naturally supports a broad range of use cases as adoption grows:
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Peer-to-Peer Payments</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value">Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive MNY anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.</span>
+<span class="constant-value" style="text-align: justify; display: block;">Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive MNY anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.</span>
 </div>
 <div style="margin-top: 0.75rem;">
 <a href="/docs.html#p2p-payments" style="color: #555555; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Learn more about P2P Payments →</a>
@@ -429,7 +429,7 @@ Moony's design naturally supports a broad range of use cases as adoption grows:
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Micropayments</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value">MNY's divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can't handle. From pay‑per‑use digital content to streaming payments, MNY unlocks new economic models that previously required centralized platforms with high fees.</span>
+<span class="constant-value" style="text-align: justify; display: block;">MNY's divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can't handle. From pay‑per‑use digital content to streaming payments, MNY unlocks new economic models that previously required centralized platforms with high fees.</span>
 </div>
 <div style="margin-top: 0.75rem;">
 <a href="/docs.html#micropayments" style="color: #555555; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Learn more about Micropayments →</a>
@@ -438,7 +438,7 @@ Moony's design naturally supports a broad range of use cases as adoption grows:
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Decentralized Finance (DeFi)</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value">MNY can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use MNY in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.</span>
+<span class="constant-value" style="text-align: justify; display: block;">MNY can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use MNY in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.</span>
 </div>
 <div style="margin-top: 0.75rem;">
 <a href="/docs.html#capital-markets" style="color: #555555; text-decoration: none; font-size: 0.875rem; font-weight: 500;">Learn more about DeFi →</a>
