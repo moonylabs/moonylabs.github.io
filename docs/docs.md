@@ -254,9 +254,10 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost�
 </div>
 </div>
 </div>
+<div class="formula-where-section">
+<p class="formula-where" style="font-size: 0.875rem; margin: 0;">The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.</p>
 </div>
-
-The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
+</div>
 
 
 
