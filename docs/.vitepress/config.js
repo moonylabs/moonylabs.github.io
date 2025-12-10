@@ -1,6 +1,13 @@
 export default {
   title: 'Moony Labs LLC',
-  titleTemplate: false, // We'll handle titles manually in transformHead
+  titleTemplate: (title) => {
+    // If no page title or it's the homepage, return just site title
+    if (!title || title === 'Moony Labs LLC') {
+      return 'Moony Labs LLC'
+    }
+    // Format as "Moony Labs LLC | Page Title"
+    return `Moony Labs LLC | ${title}`
+  },
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
@@ -17,7 +24,6 @@ export default {
     const url = `https://moonylabs.com${path}`
     
     return [
-      ['title', {}, title],
       ['meta', { property: 'og:title', content: title }],
       ['meta', { property: 'og:description', content: description }],
       ['meta', { property: 'og:url', content: url }],
@@ -60,6 +66,43 @@ export default {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['script', {}, `
+      // Set page title correctly
+      (function() {
+        function updateTitle() {
+          const path = window.location.pathname
+          if (path === '/' || path === '/index.html') {
+            document.title = 'Moony Labs LLC'
+          } else if (path === '/docs' || path === '/docs.html') {
+            document.title = 'Moony Labs LLC | Docs'
+          } else {
+            // For other pages, try to get title from page
+            const pageTitle = document.querySelector('h1')?.textContent?.trim()
+            if (pageTitle && pageTitle !== 'Moony Labs LLC') {
+              document.title = \`Moony Labs LLC | \${pageTitle}\`
+            } else {
+              document.title = 'Moony Labs LLC'
+            }
+          }
+        }
+        
+        // Set on load
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', updateTitle)
+        } else {
+          updateTitle()
+        }
+        
+        // Watch for title changes (VitePress might update it)
+        const titleObserver = new MutationObserver(updateTitle)
+        const titleElement = document.querySelector('title')
+        if (titleElement) {
+          titleObserver.observe(titleElement, { childList: true, characterData: true })
+        }
+        
+        // Also update on navigation
+        window.addEventListener('popstate', updateTitle)
+      })();
+      
       // Force light mode and prevent theme switching - Enhanced version
       (function() {
         // Immediately force light mode before any rendering
