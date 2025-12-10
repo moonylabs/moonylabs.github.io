@@ -3,12 +3,6 @@ title: Docs
 description: Peer-to-Peer Digital Cash Mined With Liquidity
 ---
 
-::: warning ⚠️ Confidential & Under Construction
-**This site contains confidential information and is currently under construction.**
-
-The content may include placeholder text, incomplete sections, and information that is subject to change. Please treat this documentation as confidential material until the final version is released.
-:::
-
 ## Moony Protocol
 
 ![Placeholder](/placeholder-color.png)
@@ -17,14 +11,37 @@ Moony is a decentralized monetary protocol designed as a digital public good. It
 
 At the core of the protocol is an immutable onchain smart contract deployed on the Solana blockchain by Moony Labs, LLC. that deterministically governs the distribution of a fixed-supply digital asset through a proof-of-liquidity mechanism, without discretionary control or centralized coordination.
 
-
-
-
-
+<div class="formula-card" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; margin: 2rem 0;">
+<div class="formula-header">
+<h4 style="margin: 0 0 1rem 0; font-size: 1rem; font-weight: 600; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em;">Quick Start</h4>
+</div>
+<div class="formula-content" style="background: transparent !important; padding: 0 !important; margin: 0 !important; border: none !important;">
+<div class="curve-constants-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left;">
+<div>
+<a href="#moony-mny" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Moony (MNY) →</a>
+</div>
+<div>
+<a href="#reserve-contract" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Reserve Contract →</a>
+</div>
+<div>
+<a href="#bonding-curve" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Bonding Curve →</a>
+</div>
+<div>
+<a href="#p2p-payments" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">P2P Payments →</a>
+</div>
+<div>
+<a href="#stakeholders" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Stakeholders →</a>
+</div>
+<div>
+<a href="#brand-identity" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Brand Identity →</a>
+</div>
+</div>
+</div>
+</div>
 
 ---
 
-### Moony (MNY)
+### Moony (MNY) {#moony-mny}
 
 Moony (MNY) is the native digital asset of the Moony protocol, designed to enable permissionless payments between participants without intermediaries.
 
@@ -46,41 +63,12 @@ This fixed supply protects Moony from monetary debasement, distinguishing it fro
 By removing the risk of discretionary supply expansion, the Moony protocol establishes a stable foundation for a decentralized economic system to flourish. Its fixed supply enforces scarcity without trust and enables economic coordination without permission.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 
-### Reserve Contract
+### Reserve Contract {#reserve-contract}
 
 The Moony Reserve Contract is the trustless mechanism through which all MNY enters circulation. Rather than relying on discretionary allocation, private sales, or centralized control, the entire MNY supply is held in a smart contract that issues tokens according to transparent, immutable rules. This ensures that every unit of MNY is acquired on equal terms, with no special access or preferential treatment.
-
 
 
 ::: tip 🚀 Reserve Contract Addresses
@@ -88,13 +76,6 @@ The Moony Reserve Contract is the trustless mechanism through which all MNY ente
 <ReserveAddresses />
 
 :::
-
-
-
-
-
-
-
 
 
 #### How It Works
@@ -106,11 +87,6 @@ When a user sends USDF (a dollar-backed stablecoin issued by Flipcash Inc.) to t
 To redeem Moony, users send MNY back to the Reserve Contract. The protocol returns USDF at the current redemption rate, again determined by the bonding curve. Pricing is updated in real time and applied automatically with each transaction.
 
 This two-way mechanism allows users to enter and exit the system freely, without centralized intermediaries or approvals. Issuance and redemption occur directly through the contract’s internal logic, ensuring predictable and transparent outcomes for all participants.
-
-
-
-
-
 
 
 <div class="formula-card">
@@ -252,8 +228,6 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost�
 <p class="formula-where" style="font-size: 0.875rem; margin: 0;">The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.</p>
 </div>
 </div>
-
-
 
 ### Bonding Curve
 
@@ -484,11 +458,7 @@ The Reserve Contract provides the primary pricing mechanism for MNY, but price d
 </div>
 </div>
 
-
-
 ## Moony Economy
-
-
 
 ![Placeholder](/placeholder-color.png)
 
@@ -539,8 +509,7 @@ Moony's design naturally supports a broad range of use cases as adoption grows:
 
 These examples demonstrate Moony's flexibility as a foundational layer, rather than a tool confined to a single application or vertical. Its long-term utility will be defined by open participation and the ingenuity of independent developers, communities, and platforms. Engineered for composability and permissionless integration, Moony's ecosystem expands organically as new participants build on top of it. Each integration strengthens its position as a decentralized public good, resilient, adaptive, and free from centralized control.
 
-
-### P2P Payments
+### P2P Payments {#p2p-payments}
 
 ![Placeholder](/placeholder-color.png)
 
@@ -928,8 +897,6 @@ These use cases illustrate how one asset can power multiple layers of the financ
 
 MNY's integration into DeFi is a natural expression of its design principles. By combining verifiable scarcity, SPL‑standard interoperability, and permissionless integration, MNY has the potential to become a durable building block for decentralized finance. Each DeFi integration strengthens the ecosystem, extending MNY's role from peer‑to‑peer digital cash into a global, self‑sustaining network for internet capital markets.
 
-
-
 ## Moony Network
 
 ![Placeholder](/placeholder-color.png)
@@ -940,10 +907,9 @@ Moony is designed as open digital infrastructure. Participation is not gated by 
 
 This structure is what allows Moony to function as a true digital public good. The network is not operated as a corporate product or directed through top-down coordination. Instead, it evolves through open collaboration, distributed ownership, and permissionless participation across a wide range of stakeholders.
 
+Moony is a public good, sustained and advanced by communities that choose to engage with it. While deployed by Moony Labs, LLC., the protocol operates independently without any central control or governance. Its evolution is shaped not by central mandates, but by collective action on a shared foundation. Developers may integrate Moony into applications and infrastructure. Creators may produce educational or cultural content. Merchants may adopt it as a medium of exchange. New organizations may form to expand awareness and accessibility. Every contribution, whether technical, educational, economic, or cultural, extends Moony's reach and resilience.
 
-
-
-### Stakeholders
+### Stakeholders {#stakeholders}
 
 The Moony network is composed of many independent participants who engage with the protocol at different layers and in different ways. These stakeholders are not organized under a central authority and do not operate under unified direction. Each participant engages according to their own incentives, interests, and capacities within an open, permissionless system.
 
@@ -1027,22 +993,11 @@ At present, Moony Labs does not conduct marketing, community management, ecosyst
 
 This structure ensures that Moony does not depend on continued performance, promotion, or stewardship from its publisher. No future development, maintenance, marketing, or economic return is promised or implied. From the moment of publication, Moony exists as a permissionless public good. Its value, culture, and long-term trajectory are shaped not by Moony Labs, but by the broader community of developers, users, educators, businesses, and independent contributors who choose to participate in its ecosystem.
 
-### Public Good
-
-Moony is a public good, sustained and advanced by communities that choose to engage with it. While deployed by Moony Labs, LLC., the protocol operates independently without any central control or governance. Its evolution is shaped not by central mandates, but by collective action on a shared foundation.
-
-Developers may integrate Moony into applications and infrastructure. Creators may produce educational or cultural content. Merchants may adopt it as a medium of exchange. New organizations may form to expand awareness and accessibility. Every contribution, whether technical, educational, economic, or cultural, extends Moony's reach and resilience.
-
 The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
+## Resources
 
-
-
-**Getting Started:**
-
-Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
-
-### Brand Identity
+### Brand Identity {#brand-identity}
 
 Moony's visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces.
 
@@ -1059,9 +1014,6 @@ The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, 
 Moony's icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
 
 <div class="formula-card">
-<div class="formula-header">
-<h4>Icon Design</h4>
-</div>
 <div class="formula-content">
 <div class="curve-constants-grid">
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -1107,9 +1059,12 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
+#### Getting Started
+
+Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
+
 ---
-&nbsp;
-&nbsp;
+
 ::: warning
 This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain by Moony Labs, LLC. The protocol operates autonomously and cannot be altered or controlled by any party, including Moony Labs, LLC. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
 :::
