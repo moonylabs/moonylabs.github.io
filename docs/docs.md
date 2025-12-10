@@ -3,6 +3,12 @@ title: Docs
 description: Peer-to-Peer Digital Cash Mined With Liquidity
 ---
 
+::: warning ⚠️ Confidential & Under Construction
+**This site contains confidential information and is currently under construction.**
+
+The content may include placeholder text, incomplete sections, and information that is subject to change. Please treat this documentation as confidential material until the final version is released.
+:::
+
 ## Moony Protocol
 
 ![Placeholder](/placeholder-color.png)
@@ -10,34 +16,6 @@ description: Peer-to-Peer Digital Cash Mined With Liquidity
 Moony is a decentralized monetary protocol designed as a digital public good. It provides open access to financial participation, enables trustless peer-to-peer value exchange, and establishes a composable foundation for a decentralized global economy.
 
 At the core of the protocol is an immutable onchain smart contract deployed on the Solana blockchain by Moony Labs, LLC. that deterministically governs the distribution of a fixed-supply digital asset through a proof-of-liquidity mechanism, without discretionary control or centralized coordination.
-
-<div class="formula-card" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 1.5rem; margin: 2rem 0;">
-<div class="formula-header">
-<h4 style="margin: 0 0 1rem 0; font-size: 1rem; font-weight: 600; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em;">Quick Start</h4>
-</div>
-<div class="formula-content" style="background: transparent !important; padding: 0 !important; margin: 0 !important; border: none !important;">
-<div class="curve-constants-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; text-align: left;">
-<div>
-<a href="#moony-mny" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Moony (MNY) →</a>
-</div>
-<div>
-<a href="#reserve-contract" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Reserve Contract →</a>
-</div>
-<div>
-<a href="#bonding-curve" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Bonding Curve →</a>
-</div>
-<div>
-<a href="#p2p-payments" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">P2P Payments →</a>
-</div>
-<div>
-<a href="#stakeholders" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Stakeholders →</a>
-</div>
-<div>
-<a href="#brand-identity" style="color: #555555; text-decoration: none; font-weight: 500; display: block; padding: 0.5rem 0;">Brand Identity →</a>
-</div>
-</div>
-</div>
-</div>
 
 ---
 
