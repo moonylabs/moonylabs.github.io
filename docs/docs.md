@@ -60,7 +60,7 @@ The Moony Reserve Contract is the trustless mechanism through which all MNY ente
 
 ![Placeholder](/placeholder-color.png)
 
-When a user sends USDF (a dollar-backed stablecoin issued by Flipcash Inc.) to the Reserve Contract, the protocol calculates a price using a deterministic bonding curve. It mints the corresponding amount of Moony (MNY) and transfers it directly to the user’s wallet. The USDF is retained onchain as protocol liquidity, ensuring every unit of circulating Moony is backed by verifiable capital.
+When a user sends USDF (a dollar-backed stablecoin issued by Flipcash Inc.) to the Reserve Contract, the protocol calculates a price using a deterministic bonding curve. It unlocks the corresponding amount from the pre-minted supply of Moony (MNY) and transfers it directly to the user’s wallet. The USDF is retained onchain as protocol liquidity, ensuring every unit of circulating Moony is backed by verifiable capital.
 
 To redeem Moony, users send MNY back to the Reserve Contract. The protocol returns USDF at the current redemption rate, again determined by the bonding curve. Pricing is updated in real time and applied automatically with each transaction.
 
