@@ -115,13 +115,39 @@ This two-way mechanism allows users to enter and exit the system freely, without
 
 #### Design Principles
 
-- **Immutable:** The Moony Reserve Contract cannot be altered once deployed. There are no admin keys, upgrade paths, or special permissions. The issuance, pricing, and redemption logic is permanently encoded at the smart contract level, ensuring no future changes or governance actions can override it. 
-
-- **Permissionless:** Anyone can interact with the Moony Reserve Contract directly from their own wallet. There are no intermediaries, whitelists, or identity checks required. The system is open to all participants equally.
-
-- **Non-custodial:** The Moony Reserve Contract does not hold user assets in a custodial manner. Users deposit USDF and receive MNY, or return MNY to redeem USDF, with no third party controlling the funds. All interactions occur directly between the user and the contract.
-
-- **Transparent:** All supply, liquidity, and pricing data is recorded on the Solana blockchain. Every interaction with the Moony Reserve Contract is publicly visible and verifiable. The system is fully auditable and provable in real time.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Design Principles</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Immutable</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The Moony Reserve Contract cannot be altered once deployed. There are no admin keys, upgrade paths, or special permissions. The issuance, pricing, and redemption logic is permanently encoded at the smart contract level, ensuring no future changes or governance actions can override it.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Permissionless</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Anyone can interact with the Moony Reserve Contract directly from their own wallet. There are no intermediaries, whitelists, or identity checks required. The system is open to all participants equally.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Non-custodial</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The Moony Reserve Contract does not hold user assets in a custodial manner. Users deposit USDF and receive MNY, or return MNY to redeem USDF, with no third party controlling the funds. All interactions occur directly between the user and the contract.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Transparent</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">All supply, liquidity, and pricing data is recorded on the Solana blockchain. Every interaction with the Moony Reserve Contract is publicly visible and verifiable. The system is fully auditable and provable in real time.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Infrastructure Provider
 
@@ -144,9 +170,33 @@ The Moony reserve contract holds all USDF deposits as onchain liquidity, enablin
 
 #### Key Properties
 
-- **Permissionless:** Anyone can mint MNY by interacting directly with the reserve contract, with no approvals or intermediaries required.
-- **Proof of Liquidity:** Capital used to mint MNY remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
-- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Key Properties</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Permissionless</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Anyone can mint MNY by interacting directly with the reserve contract, with no approvals or intermediaries required.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Proof of Liquidity</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Capital used to mint MNY remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Bonding Curve</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Capital-Based Mining
 
@@ -158,9 +208,33 @@ By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves
 
 This process is:
 
-- **Permissionless**: Anyone can participate as demand arises, without permission or centralized control.
-- **Economically Constructive**: All capital remains in the Reserve Contract, forming the liquidity backbone of Moony's economy.
-- **Energy Efficient**: By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana's low-carbon infrastructure.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Capital-Based Mining</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Permissionless</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Anyone can participate as demand arises, without permission or centralized control.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Economically Constructive</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">All capital remains in the Reserve Contract, forming the liquidity backbone of Moony's economy.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Energy Efficient</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">By replacing energy-intensive computation with on-chain capital deposits, PoL reduces environmental impact and complements Solana's low-carbon infrastructure.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Fee Model {#fee-model}
 
@@ -168,8 +242,27 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost�
 
 This mechanism serves two purposes:
 
-- **Security**: The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user's trade.
-- **Infrastructure Support**: Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/docs#infrastructure-provider)).
+<div class="formula-card">
+<div class="formula-header">
+<h4>Fee Model</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Security</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user's trade.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Infrastructure Support</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/docs#infrastructure-provider)).</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
 
@@ -185,13 +278,39 @@ This mechanism applies symmetrically to both minting and redemption. When new MN
 
 #### Core Principles
 
-- **Price Increases with Demand:** As users mint MNY from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
-
-- **Price Also Governs Redemption:** When users redeem MNY for USDF through the Reserve, the curve calculates the return value based on the current supply position.
-
-- **Predictable and Transparent:** Pricing is fully deterministic, enforced by on‑chain logic, and free from discretionary control.
-
-- **Aligned Incentives:** Early adopters gain an advantage, while later participants strengthen network liquidity through higher‑priced entries.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Core Principles</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Price Increases with Demand</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">As users mint MNY from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Price Also Governs Redemption</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">When users redeem MNY for USDF through the Reserve, the curve calculates the return value based on the current supply position.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Predictable and Transparent</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Pricing is fully deterministic, enforced by on‑chain logic, and free from discretionary control.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Aligned Incentives</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Early adopters gain an advantage, while later participants strengthen network liquidity through higher‑priced entries.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Model Parameters
 
@@ -463,18 +582,71 @@ Legacy payment systems rely on layered intermediaries such as banks, processors,
 
 Moony's P2P model is different:
 
-- **Direct settlement:** Transfers occur directly on-chain between sender and recipient, with no custodial middleman.
-- **Trust minimization:** Settlement rules are enforced by code, not dependent on counterparties.
-- **Censorship resistance:** Valid transactions are processed so long as participants can access the network.
-- **Global accessibility:** Anyone with internet access and a compatible wallet can participate.
+<div class="formula-card">
+<div class="formula-header">
+<h4>P2P Model</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Direct settlement</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Transfers occur directly on-chain between sender and recipient, with no custodial middleman.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Trust minimization</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Settlement rules are enforced by code, not dependent on counterparties.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Censorship resistance</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Valid transactions are processed so long as participants can access the network.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Global accessibility</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Anyone with internet access and a compatible wallet can participate.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Global Scalability
 
 To make P2P viable at scale, both cost and throughput must support everyday usage. These characteristics make Moony suitable for daily transactions, not just high-value transfers. Moony launches on Solana to meet these requirements:
 
-- **Low Fees:** Typical transfers cost fractions of a cent, with fees known at submission.
-- **Throughput & latency:** Solana's high-performance network supports rapid confirmations without congestion.
-- **Composability:** The same infrastructure powering P2P also enables micropayments, streaming, and automated settlement.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Global Scalability</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Low Fees</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Typical transfers cost fractions of a cent, with fees known at submission.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Throughput & Latency</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Solana's high-performance network supports rapid confirmations without congestion.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Composability</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The same infrastructure powering P2P also enables micropayments, streaming, and automated settlement.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 Together, these properties make Moony credible for daily payments, not just occasional high‑value transactions.
 
@@ -486,10 +658,39 @@ Where banking does exist, high fees, slow settlement times, and rigid requiremen
 
 Moony addresses these challenges:
 
-- **Open access:** Anyone with a smartphone can receive Moony without bank accounts or gatekeepers.
-- **Remittance:** Affordable, near-instant settlement for cross-border payments.
-- **Commerce:** Merchants and creators can accept payments without card fees or chargebacks.
-- **Availability:** Operates 24/7, unaffected by weekends or holidays, like traditional systems.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Financial Inclusion</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Open access</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Anyone with a smartphone can receive Moony without bank accounts or gatekeepers.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Remittance</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Affordable, near-instant settlement for cross-border payments.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Commerce</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Merchants and creators can accept payments without card fees or chargebacks.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Availability</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Operates 24/7, unaffected by weekends or holidays, like traditional systems.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 Moony's peer‑to‑peer architecture offers a different path: one that bypasses the bottlenecks of legacy finance and extends open participation to anyone with a mobile device. By removing intermediaries and leveraging low‑cost, high‑speed blockchain settlement, Moony makes direct digital transactions viable at a scale and inclusivity level traditional rails cannot match.
 
@@ -499,8 +700,27 @@ Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fu
 
 Several key properties enable this interoperability:
 
-- **Wallet compatibility:** Any Solana‑compatible wallet that supports SPL tokens can hold and transfer Moony. Users are free to manage their balances in the interface of their choice, rather than being locked into a single custodial or proprietary app.
-- **Composability:** Moony can be added to payment apps, point‑of‑sale systems, bots, and custodial or non‑custodial services with minimal friction. Developers can plug into Moony the same way they support any other SPL token, allowing it to circulate naturally through the ecosystem.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Interoperable Access</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Wallet compatibility</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Any Solana‑compatible wallet that supports SPL tokens can hold and transfer Moony. Users are free to manage their balances in the interface of their choice, rather than being locked into a single custodial or proprietary app.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Composability</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Moony can be added to payment apps, point‑of‑sale systems, bots, and custodial or non‑custodial services with minimal friction. Developers can plug into Moony the same way they support any other SPL token, allowing it to circulate naturally through the ecosystem.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 Because Moony is permissionless and composable by design, its peer‑to‑peer utility is not constrained to a single application. The token can flow seamlessly between wallets, payment interfaces, and future onchain services, creating a foundation for global accessibility and financial inclusion as the network of integrations grows.
 
@@ -512,8 +732,27 @@ At launch, Flipcash provides the first public interface for interacting directly
 
 ##### Flipcash Enables Users To:
 
-- **Interact With Reserve:** Seamlessly convert between Moony and USDF through an intuitive interface.
-- **Send P2P Payments:** Instantly use Moony as digital cash where you can hand it to someone or send it as a link, with zero fees for peer-to-peer transfers.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Flipcash Enables Users To</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Interact With Reserve</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Seamlessly convert between Moony and USDF through an intuitive interface.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Send P2P Payments</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Instantly use Moony as digital cash where you can hand it to someone or send it as a link, with zero fees for peer-to-peer transfers.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 ::: tip click-here-tip
 [Download Flipcash Mobile Application](https://www.flipcash.com)
@@ -541,11 +780,33 @@ These limitations have forced creators, developers, and small businesses into ce
 
 Micropayments are not simply smaller versions of ordinary transactions, they are a missing building block of the modern internet economy. The inability to move tiny amounts of value efficiently has shaped the digital landscape in ways that limit innovation and inclusion:
 
-- **Centralization**: Without cost‑effective direct payment rails, creators and small businesses are forced into platforms that bundle transactions, take large fees, and control access to audiences.
-
-- **Subscriptions**: The impracticality of per‑use billing forces consumers into subscription models, paying for more than they actually use.
-
-- **Bottlenecks**: Entire categories of applications, such as real‑time metering, per‑unit API calls, or machine‑to‑machine commerce, remain underdeveloped because payment systems cannot handle the volume or economics they require.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Why It Matters</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Centralization</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Without cost‑effective direct payment rails, creators and small businesses are forced into platforms that bundle transactions, take large fees, and control access to audiences.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Subscriptions</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The impracticality of per‑use billing forces consumers into subscription models, paying for more than they actually use.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Bottlenecks</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Entire categories of applications, such as real‑time metering, per‑unit API calls, or machine‑to‑machine commerce, remain underdeveloped because payment systems cannot handle the volume or economics they require.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 #### Moony's Advantage
 
@@ -559,11 +820,45 @@ Moony's micropayment capabilities enable a wide range of practical and programma
 
 Micropayments with Moony open the door to innovative digital and physical interactions, including:
 
-- **Pay-Per-Use:** Unlock content, articles, videos, or AI tools for pennies without recurring subscriptions.
-- **In-App Purchase:** Purchase digital items, upgrades, or event access without credit card integrations.
-- **Streaming Payments:** Transfer value continuously in real time for services like media consumption or cloud computing.
-- **M2M Commerce:** Automate exchange of bandwidth, energy, or data in precise micro‑increments.
-- **Direct Support:** Send low‑fee micro‑tips to artists, streamers, or writers without intermediary platform fees.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Potential Applications</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Pay-Per-Use</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Unlock content, articles, videos, or AI tools for pennies without recurring subscriptions.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">In-App Purchase</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Purchase digital items, upgrades, or event access without credit card integrations.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Streaming Payments</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Transfer value continuously in real time for services like media consumption or cloud computing.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">M2M Commerce</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Automate exchange of bandwidth, energy, or data in precise micro‑increments.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Direct Support</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Send low‑fee micro‑tips to artists, streamers, or writers without intermediary platform fees.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 By combining scarce, divisible digital cash with low‑cost, high‑throughput settlement, Moony turns micropayments from an abstract ideal into a practical, composable building block for a decentralized, internet‑native economy.
 
@@ -581,9 +876,33 @@ Traditional finance relies on layers of centralized institutions such as banks, 
 
 This system creates multiple frictions:
 
-- **Limited access:** Many people globally cannot open bank accounts or meet minimum requirements for financial services.
-- **Delay and inefficiency:** Cross‑border settlements and loans can take days, incurring high fees along the way.
-- **Opacity and custodial risk:** Users must trust institutions to remain solvent, secure, and fair.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Why It Matters</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Limited access</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Many people globally cannot open bank accounts or meet minimum requirements for financial services.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Delay and inefficiency</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Cross‑border settlements and loans can take days, incurring high fees along the way.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Opacity and custodial risk</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Users must trust institutions to remain solvent, secure, and fair.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 DeFi eliminates these barriers by replacing human discretion with transparent, automated smart contracts. Anyone with an internet connection can access financial services, and asset flows can be audited, verified, and settled in real time.
 
@@ -593,9 +912,33 @@ For Moony, DeFi is not an optional side use case, it is the natural extension of
 
 Moony possesses three core attributes that make it a natural fit for decentralized finance:
 
-- **Composable and Permissionless:** Moony can integrate with any Solana‑based DeFi protocol without approvals or gatekeeping, allowing it to serve as collateral, liquidity in AMMs/DEXs, or a medium of exchange. Each new integration compounds Moony's utility and strengthens the network effect.
-- **Transparent and Predictable Supply:** With a fixed supply of 21,000,000 and a fully on‑chain reserve contract, Moony provides deterministic issuance and verifiable scarcity. This reduces collateral risk, avoids inflationary surprises, and builds confidence in Moony as a trust‑minimized, reliable asset.
-- **SPL Standard and Interoperability:** As an SPL token, Moony is natively compatible with the Solana DeFi ecosystem. It can move seamlessly between wallets, DEXs, lending protocols, and automated strategies, enabling fluid composability and frictionless circulation across the network.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Moony's Advantage</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Composable and Permissionless</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Moony can integrate with any Solana‑based DeFi protocol without approvals or gatekeeping, allowing it to serve as collateral, liquidity in AMMs/DEXs, or a medium of exchange. Each new integration compounds Moony's utility and strengthens the network effect.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Transparent and Predictable Supply</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">With a fixed supply of 21,000,000 and a fully on‑chain reserve contract, Moony provides deterministic issuance and verifiable scarcity. This reduces collateral risk, avoids inflationary surprises, and builds confidence in Moony as a trust‑minimized, reliable asset.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">SPL Standard and Interoperability</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">As an SPL token, Moony is natively compatible with the Solana DeFi ecosystem. It can move seamlessly between wallets, DEXs, lending protocols, and automated strategies, enabling fluid composability and frictionless circulation across the network.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 Together, these properties make Moony a credible building block for DeFi, ready to flow through lending markets, liquidity pools, and programmable financial products without reliance on any single platform.
 
@@ -605,9 +948,33 @@ Moony's utility in DeFi will expand organically as adoption grows and protocols 
 
 Potential use cases include:
 
-- **Liquidity Pools and Swaps:** MNY can be deposited into automated market makers (AMMs) or decentralized exchanges (DEXs), allowing permissionless swaps and contributing to price discovery and market depth.
-- **Collateralized Lending and Borrowing:** Holders can supply Moony as collateral to borrow stablecoins or other assets. This allows users to unlock liquidity without selling, while protocols gain access to a scarce, verifiable asset.
-- **Yield Opportunities and Incentive Programs:** Liquidity mining, staking rewards, or protocol incentives can encourage Moony holders to actively participate in ecosystem growth, reinforcing both liquidity and visibility.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Potential Applications</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Liquidity Pools and Swaps</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">MNY can be deposited into automated market makers (AMMs) or decentralized exchanges (DEXs), allowing permissionless swaps and contributing to price discovery and market depth.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Collateralized Lending and Borrowing</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Holders can supply Moony as collateral to borrow stablecoins or other assets. This allows users to unlock liquidity without selling, while protocols gain access to a scarce, verifiable asset.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Yield Opportunities and Incentive Programs</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">Liquidity mining, staking rewards, or protocol incentives can encourage Moony holders to actively participate in ecosystem growth, reinforcing both liquidity and visibility.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 These use cases illustrate how one asset can power multiple layers of the financial stack, enabling both basic interactions and complex, high‑order products.
 
@@ -745,11 +1112,33 @@ The Moony wordmark uses the typeface Blanquotey, chosen for its clean geometry, 
 
 Moony's icon is deliberately minimal, yet layered with symbolic meaning, crafted to express both functional clarity and conceptual depth across any medium.
 
-- **Moon Over Horizon:** The central form evokes a moon rising above a horizon, an allusion to Moony's namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.
-
-- **Binary Reference:** When rotated, the icon resembles a "1" and "0," subtly invoking binary code. This visual echo underscores Moony's digital origin and inherent programmability, positioning it as a native asset of internet capital markets. 
-
-- **Market Semantics:** In trading contexts, the icon can be interpreted as denoting "over," "above," or directional movement, suggesting upward price momentum along Moony's bonding curve. This reflects its dynamic economic model, where adoption, integration, and transaction flow drive emergent market value.
+<div class="formula-card">
+<div class="formula-header">
+<h4>Icon Design</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Moon Over Horizon</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">The central form evokes a moon rising above a horizon, an allusion to Moony's namesake and growth. The horizontal line grounds the symbol, suggesting stability and foundational integrity, while the ascending shape implies forward motion and open-ended potential.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Binary Reference</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">When rotated, the icon resembles a "1" and "0," subtly invoking binary code. This visual echo underscores Moony's digital origin and inherent programmability, positioning it as a native asset of internet capital markets.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
+<div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Market Semantics</div>
+<div class="constant-value-wrapper" style="width: 100%;">
+<span class="constant-value" style="text-align: justify; display: block;">In trading contexts, the icon can be interpreted as denoting "over," "above," or directional movement, suggesting upward price momentum along Moony's bonding curve. This reflects its dynamic economic model, where adoption, integration, and transaction flow drive emergent market value.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 The symbol is optimized for clarity at small sizes, performing reliably in both light and dark themes. Its simplicity ensures broad adaptability, while its layered references reinforce Moony's identity as both a technical primitive and an enduring digital brand.
 
