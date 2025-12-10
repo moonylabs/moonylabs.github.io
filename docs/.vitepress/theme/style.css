@@ -1190,7 +1190,17 @@ html.dark {
 .VPDocAside .content-container > ul > li > ul > li > a,
 .VPDocAside a[href*="#stakeholders"],
 .VPDocAside a[href*="#coordination"],
-.VPDocAside a[href*="#resources"] {
+.VPDocAside a[href*="#resources"],
+.VPDocAside a[href*="#moony-network"] + ul > li > li > a,
+.VPDocAside a:contains("Resources") {
+  font-weight: normal !important;
+  font-size: 14px !important;
+  color: #64748b !important;
+}
+
+/* Specifically target Resources link - more specific override */
+.VPDocAside .content-container ul > li > ul > li > a[href*="resources"],
+.VPDocAside ul > li > ul > li > a[href*="resources"] {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #64748b !important;

@@ -979,7 +979,7 @@ Stakeholders benefit from increasing adoption of the Moony network because it dr
 
 The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
-### Resources
+### Resources {#resources}
 
 #### Brand Identity {#brand-identity}
 
