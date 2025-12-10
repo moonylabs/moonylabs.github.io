@@ -973,9 +973,9 @@ This structure ensures that Moony does not depend on continued performance, prom
 
 The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
-## Resources
+### Resources
 
-### Brand Identity {#brand-identity}
+#### Brand Identity {#brand-identity}
 
 Moony's visual identity is designed to be simple, expressive, and open, a reflection of its role as a decentralized public asset that belongs to everyone. This page defines the core name, symbol, and usage conventions that ensure Moony is represented consistently across applications, communications, and interfaces.
 
