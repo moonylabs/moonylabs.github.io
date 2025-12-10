@@ -1,5 +1,6 @@
 export default {
-  title: 'Moony Documents',
+  title: 'Moony Labs LLC',
+  titleTemplate: (title) => title ? `${title} | Moony Labs LLC` : 'Moony Labs LLC',
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
@@ -32,8 +33,8 @@ export default {
     ['meta', { property: 'og:title', content: 'Moony Labs LLC' }],
     ['meta', { property: 'og:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
     ['meta', { property: 'og:site_name', content: 'Moony Labs LLC' }],
-    ['meta', { property: 'og:url', content: 'https://moonylabs.github.io/' }],
-    ['meta', { property: 'og:image', content: 'https://moonylabs.github.io/socialshare.png' }],
+    ['meta', { property: 'og:url', content: 'https://moonylabs.com/' }],
+    ['meta', { property: 'og:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['meta', { property: 'og:image:width', content: '1920' }],
     ['meta', { property: 'og:image:height', content: '1080' }],
     ['meta', { property: 'og:image:type', content: 'image/png' }],
@@ -41,7 +42,7 @@ export default {
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Moony Labs LLC' }],
     ['meta', { name: 'twitter:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
-    ['meta', { name: 'twitter:image', content: 'https://moonylabs.github.io/socialshare.png' }],
+    ['meta', { name: 'twitter:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['script', {}, `
       // Force light mode and prevent theme switching - Enhanced version
       (function() {

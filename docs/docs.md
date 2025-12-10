@@ -1,3 +1,6 @@
+---
+title: Docs
+---
 
 ::: warning ⚠️ Confidential & Under Construction
 **This site contains confidential information and is currently under construction.**
