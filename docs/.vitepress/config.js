@@ -1,36 +1,8 @@
 export default {
   title: 'Moony Labs',
-  titleTemplate: (title) => {
-    // If no page title or it's the homepage, return just site title
-    if (!title || title === 'Moony Labs') {
-      return 'Moony Labs'
-    }
-    // Format as "Moony Labs | Page Title"
-    return `Moony Labs | ${title}`
-  },
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
-  transformHead: ({ pageData, siteData }) => {
-    const pageTitle = pageData.frontmatter?.title || pageData.title
-    // Format as "Moony Labs | Page Title" or just "Moony Labs" for homepage
-    const title = pageTitle && pageTitle !== siteData.title && pageData.relativePath !== 'index.md'
-      ? `Moony Labs | ${pageTitle}`
-      : 'Moony Labs'
-    const description = pageData.frontmatter?.description || siteData.description
-    const path = pageData.relativePath === 'index.md' 
-      ? '/' 
-      : '/' + pageData.relativePath.replace(/\.md$/, '').replace(/\/index$/, '')
-    const url = `https://moonylabs.com${path}`
-    
-    return [
-      ['meta', { property: 'og:title', content: title }],
-      ['meta', { property: 'og:description', content: description }],
-      ['meta', { property: 'og:url', content: url }],
-      ['meta', { name: 'twitter:title', content: title }],
-      ['meta', { name: 'twitter:description', content: description }],
-    ]
-  },
   markdown: {
     toc: {
       level: [2, 3]
@@ -57,52 +29,20 @@ export default {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:title', content: 'Moony Labs' }],
+    ['meta', { property: 'og:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
     ['meta', { property: 'og:site_name', content: 'Moony Labs' }],
+    ['meta', { property: 'og:url', content: 'https://moonylabs.com/' }],
     ['meta', { property: 'og:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['meta', { property: 'og:image:width', content: '1920' }],
     ['meta', { property: 'og:image:height', content: '1080' }],
     ['meta', { property: 'og:image:type', content: 'image/png' }],
     ['meta', { property: 'og:image:alt', content: 'Moony Protocol - Decentralized Digital Value' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Moony Labs' }],
+    ['meta', { name: 'twitter:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
     ['meta', { name: 'twitter:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['script', {}, `
-      // Set page title correctly
-      (function() {
-        function updateTitle() {
-          const path = window.location.pathname
-          if (path === '/' || path === '/index.html') {
-            document.title = 'Moony Labs'
-          } else if (path === '/docs' || path === '/docs.html') {
-            document.title = 'Moony Labs | Docs'
-          } else {
-            // For other pages, try to get title from page
-            const pageTitle = document.querySelector('h1')?.textContent?.trim()
-            if (pageTitle && pageTitle !== 'Moony Labs') {
-              document.title = 'Moony Labs | ' + pageTitle
-            } else {
-              document.title = 'Moony Labs'
-            }
-          }
-        }
-        
-        // Set on load
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', updateTitle)
-        } else {
-          updateTitle()
-        }
-        
-        // Watch for title changes (VitePress might update it)
-        const titleObserver = new MutationObserver(updateTitle)
-        const titleElement = document.querySelector('title')
-        if (titleElement) {
-          titleObserver.observe(titleElement, { childList: true, characterData: true })
-        }
-        
-        // Also update on navigation
-        window.addEventListener('popstate', updateTitle)
-      })();
-      
       // Force light mode and prevent theme switching - Enhanced version
       (function() {
         // Immediately force light mode before any rendering

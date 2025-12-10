@@ -23,30 +23,6 @@ export default {
     app.component('ReserveAddresses', ReserveAddresses)
     app.component('VMAddresses', VMAddresses)
     
-    // Set page titles dynamically
-    if (typeof window !== 'undefined') {
-      router.afterEach((to) => {
-        // Get the page data from the route
-        const route = router.getRoutes().find(r => r.path === to.path)
-        const pageTitle = route?.meta?.frontmatter?.title || route?.meta?.title
-        if (pageTitle && to.path !== '/') {
-          document.title = `Moony Labs | ${pageTitle}`
-        } else {
-          document.title = 'Moony Labs'
-        }
-      })
-      
-      // Also set on initial load
-      setTimeout(() => {
-        const currentPath = window.location.pathname
-        if (currentPath === '/' || currentPath === '/index.html') {
-          document.title = 'Moony Labs'
-        } else if (currentPath === '/docs' || currentPath === '/docs.html') {
-          document.title = 'Moony Labs | Docs'
-        }
-      }, 100)
-    }
-    
     // Add copy to clipboard functionality
     if (typeof window !== 'undefined') {
       window.copyToClipboard = function(text, event) {
