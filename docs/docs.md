@@ -118,7 +118,7 @@ Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented
 
 Each MNY token is issued in exchange for USDF, a dollar-pegged stablecoin issued by Flipcash Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants.
 
-The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are unlocked, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 <div class="formula-card">
 <div class="formula-header">
@@ -129,19 +129,19 @@ The Moony reserve contract holds all USDF deposits as onchain liquidity, enablin
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Permissionless</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value" style="text-align: justify; display: block;">Anyone can mint MNY by interacting directly with the reserve contract, with no approvals or intermediaries required.</span>
+<span class="constant-value" style="text-align: justify; display: block;">Anyone can unlock MNY by interacting directly with the reserve contract, with no approvals or intermediaries required.</span>
 </div>
 </div>
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Proof of Liquidity</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value" style="text-align: justify; display: block;">Capital used to mint MNY remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.</span>
+<span class="constant-value" style="text-align: justify; display: block;">Capital used to unlock MNY remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.</span>
 </div>
 </div>
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Bonding Curve</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value" style="text-align: justify; display: block;">Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.</span>
+<span class="constant-value" style="text-align: justify; display: block;">Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are unlocked. This ensures that supply issuance is aligned with real demand.</span>
 </div>
 </div>
 </div>
@@ -150,11 +150,11 @@ The Moony reserve contract holds all USDF deposits as onchain liquidity, enablin
 
 #### Capital-Based Mining
 
-Moony's Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint MNY by depositing USDF directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
+Moony's Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants unlock MNY by depositing USDF directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
 
-This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new MNY but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
+This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only unlocks MNY from the pre-minted supply but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 
-By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
+By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every unlocked token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
 
 <div class="formula-card">
 <div class="formula-content">
@@ -213,7 +213,7 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost�
 
 Moony's price discovery is governed by an on‑chain bonding curve, a deterministic mathematical function encoded within the Reserve Contract. The curve dynamically adjusts the token's spot price based on the current absolute supply of tokens in circulation.
 
-This mechanism applies symmetrically to both minting and redemption. When new MNY is issued, the curve calculates the cost in USDF according to current circulating supply; when MNY is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces MNY's scarcity over time.
+This mechanism applies symmetrically to both unlocking and redemption. When MNY is unlocked from the pre-minted supply, the curve calculates the cost in USDF according to current circulating supply; when MNY is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces MNY's scarcity over time.
 
 <div class="formula-card">
 <div class="formula-content">
@@ -221,7 +221,7 @@ This mechanism applies symmetrically to both minting and redemption. When new MN
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
 <div style="font-weight: 600; font-size: 1rem; color: #1e293b; margin-bottom: 0.75rem; width: 100%;">Price Increases with Demand</div>
 <div class="constant-value-wrapper" style="width: 100%;">
-<span class="constant-value" style="text-align: justify; display: block;">As users mint MNY from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.</span>
+<span class="constant-value" style="text-align: justify; display: block;">As users unlock MNY from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.</span>
 </div>
 </div>
 <div class="curve-constant-item market-dynamics-item" style="flex-direction: column; align-items: flex-start;">
@@ -299,7 +299,7 @@ The Reserve Contract uses three constants that work together to define the expon
 <li><strong>Constant a</strong> acts as a base multiplier that scales the entire curve. It sets the overall magnitude of prices across the curve.</li>
 <li><strong>Constant b</strong> works with constant a to establish the starting price point. The product <strong>a × b</strong> determines the price when supply approaches zero (approximately $0.01 USDF).</li>
 <li><strong>Constant c</strong> controls the exponential growth rate. A larger <strong>c</strong> means the price increases more rapidly as supply grows. This constant determines how steeply the curve rises and ensures it reaches the target ending price at maximum supply.</li>
-<li>Together, <strong>a × b × e^(c × S)</strong> creates an exponential function where price grows exponentially with supply, starting low and accelerating as more tokens are minted.</li>
+<li>Together, <strong>a × b × e^(c × S)</strong> creates an exponential function where price grows exponentially with supply, starting low and accelerating as more tokens are unlocked.</li>
 </ul>
 </div>
 </div>
@@ -312,7 +312,7 @@ $c = 0.000000877175273521$
 
 ##### Cost Calculation
 
-When you buy or sell tokens, you're not buying at a single price point—you're buying across a range of supply levels. The Reserve Contract calculates the total cost by integrating the spot price function over the supply range of your transaction. These formulas are executed on-chain by the Reserve Contract for every mint and redemption transaction, ensuring deterministic and transparent pricing.
+When you buy or sell tokens, you're not buying at a single price point—you're buying across a range of supply levels. The Reserve Contract calculates the total cost by integrating the spot price function over the supply range of your transaction. These formulas are executed on-chain by the Reserve Contract for every unlock and redemption transaction, ensuring deterministic and transparent pricing.
 
 <div class="formula-card">
 <div class="formula-content">
@@ -397,7 +397,7 @@ The Reserve Contract provides the primary pricing mechanism for MNY, but price d
 <div class="curve-constant-item market-dynamics-item">
 <span class="constant-label">Primary Pricing</span>
 <div class="constant-value-wrapper">
-<span class="constant-value">Reserve Contract bonding curve determines mint and redemption prices</span>
+<span class="constant-value">Reserve Contract bonding curve determines unlock and redemption prices</span>
 </div>
 </div>
 <div class="curve-constant-item market-dynamics-item">
@@ -420,7 +420,7 @@ The Reserve Contract provides the primary pricing mechanism for MNY, but price d
 <div class="curve-constant-item market-dynamics-item">
 <span class="constant-label">Market Price Above Curve</span>
 <div class="constant-value-wrapper">
-<span class="constant-value">Users can mint from the Reserve at a lower cost, creating downward pressure on market price</span>
+<span class="constant-value">Users can unlock from the Reserve at a lower cost, creating downward pressure on market price</span>
 </div>
 </div>
 <div class="curve-constant-item market-dynamics-item">
@@ -610,7 +610,7 @@ Moony's peer‑to‑peer architecture offers a different path: one that bypasses
 
 #### Interoperable Access
 
-Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fully interoperable and not bound to any single interface or platform. From the moment it is minted, Moony is part of a broader composable ecosystem where users and developers can freely move, store, and integrate the asset without permission. This open design not only reinforces Moony's role as decentralized digital cash but also guarantees that its utility can expand organically across a variety of independent applications.
+Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fully interoperable and not bound to any single interface or platform. All 21,000,000 tokens are minted during contract initialization and held in a locked state until unlocked through purchases. From the moment tokens are unlocked, Moony is part of a broader composable ecosystem where users and developers can freely move, store, and integrate the asset without permission. This open design not only reinforces Moony's role as decentralized digital cash but also guarantees that its utility can expand organically across a variety of independent applications.
 
 Several key properties enable this interoperability:
 
@@ -672,7 +672,7 @@ While Flipcash provides the first front end to access the Moony reserve contract
 
 Flipcash leverages Code Payments' Virtual Machine (VM) infrastructure to enable efficient, zero-fee peer-to-peer payments. The VM system enables batch processing and optimization of payments, making micropayments and frequent transfers economically viable.
 
-These VM addresses are part of Flipcash's payment infrastructure and are not required for direct interaction with the Moony Reserve Contract. Users can mint and redeem MNY directly through the Reserve Contract without using these VM addresses.
+These VM addresses are part of Flipcash's payment infrastructure and are not required for direct interaction with the Moony Reserve Contract. Users can unlock and redeem MNY directly through the Reserve Contract without using these VM addresses.
 
 <VMAddresses />
 

@@ -26,15 +26,15 @@ This documentation is for informational purposes only and does not constitute fi
 
 # Tokenomics
 
-Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. New tokens are issued exclusively through a reserve contract deployed on the Solana blockchain, allowing users to mint Moony by depositing USDF, a US dollar stablecoin issued by Flipcash Inc.
+Moony has a fixed maximum supply of 21 million tokens, enforced by immutable onchain logic. All 21,000,000 tokens are minted during contract initialization and held in a locked state. Tokens are unlocked exclusively through a reserve contract deployed on the Solana blockchain, allowing users to unlock Moony by depositing USDF, a US dollar stablecoin issued by Flipcash Inc.
 
-The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted.
+The Moony reserve contract holds all user deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are unlocked.
 
 **Key Properties:**
 
 - **Transparent:** Issuance follows deterministic onchain logic, with real-time visibility into price and supply
-- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required  
-- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring verifiable backing
+- **Permissionless:** Anyone can unlock Moony by interacting directly with the reserve contract, with no approvals or intermediaries required  
+- **Proof of Liquidity:** Capital used to unlock Moony remains in the reserve, supporting redemptions and ensuring verifiable backing
 
 This model, referred to as Proof of Liquidity (PoL), replaces energy-intensive mining with a capital-based issuance mechanism. Instead of consuming electricity, users deposit capital directly into the network, where it remains onchain as liquidity.
 

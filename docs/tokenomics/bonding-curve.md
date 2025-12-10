@@ -2,11 +2,11 @@
 
 Moony’s price discovery is governed by an on‑chain bonding curve, a deterministic mathematical function encoded within the Reserve Contract. The curve dynamically adjusts the token’s price based on the current absolute supply of tokens in circulation.
 
-This mechanism applies symmetrically to both minting and redemption. When new Moony is issued, the curve calculates the cost in USDF according to current circulating supply; when Moony is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces Moony’s scarcity over time.
+This mechanism applies symmetrically to both unlocking and redemption. When Moony is unlocked from the pre-minted supply, the curve calculates the cost in USDF according to current circulating supply; when Moony is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces Moony’s scarcity over time.
 
 ## Core Principles
 
-- **Price Increases with Demand:** As users mint Moony from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
+- **Price Increases with Demand:** As users unlock Moony from the Reserve Contract, the circulating supply increases and the bonding curve adjusts the price upward with each transaction.
 
 - **Price Also Governs Redemption:** When users redeem Moony for USDF through the Reserve, the curve calculates the return value based on the current supply position.
 
@@ -75,7 +75,7 @@ When redeeming tokens, the value received uses the inverse calculation:
 
 Where **S_new = S_current - tokens_to_sell**.
 
-These formulas are executed on-chain by the Reserve Contract for every mint and redemption transaction, ensuring deterministic and transparent pricing.
+These formulas are executed on-chain by the Reserve Contract for every unlock and redemption transaction, ensuring deterministic and transparent pricing.
 
 ### Price Progression
 
@@ -89,4 +89,4 @@ This model guarantees deterministic, transparent price progression. The exponent
 
 ## Market Dynamics
 
-While the Reserve Contract governs Moony’s primary issuance and redemption pricing, price discovery may also occur on secondary markets, including centralized exchanges or peer‑to‑peer platforms. These market prices may temporarily diverge from the bonding curve price. However, the Reserve’s transparent pricing mechanism creates an arbitrage anchor. If Moony trades above the Reserve price, users can mint from the Reserve at a lower cost. If Moony trades below the Reserve price, arbitrageurs can buy on the market and redeem to the Reserve. This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.
+While the Reserve Contract governs Moony’s primary issuance and redemption pricing, price discovery may also occur on secondary markets, including centralized exchanges or peer‑to‑peer platforms. These market prices may temporarily diverge from the bonding curve price. However, the Reserve’s transparent pricing mechanism creates an arbitrage anchor. If Moony trades above the Reserve price, users can unlock from the Reserve at a lower cost. If Moony trades below the Reserve price, arbitrageurs can buy on the market and redeem to the Reserve. This dynamic keeps market prices tethered to the curve, reinforcing liquidity and price stability across platforms.

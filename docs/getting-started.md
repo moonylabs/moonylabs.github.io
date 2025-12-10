@@ -6,9 +6,9 @@
 
 ## Tokenomics
 
-The total supply is capped at 21 million tokens, enforced by a smart contract that cannot be altered or upgraded. There are no team allocations, no treasury reserves, and no private premines. Every token in circulation is minted under the same public rules, directly from a decentralized Reserve Contract deployed on Solana.
+The total supply is capped at 21 million tokens, enforced by a smart contract that cannot be altered or upgraded. There are no team allocations, no treasury reserves, and no private premines. All 21,000,000 tokens are minted during contract initialization and held in a locked state. Every token enters circulation by being unlocked under the same public rules, directly from a decentralized Reserve Contract deployed on Solana.
 
-The Reserve Contract governs all token issuance and redemption. Users can mint Moony by depositing USDF, a U.S. dollar–backed stablecoin issued by Flipcash Inc., into the Reserve Contract. Pricing is determined by a deterministic bonding curve that increases as circulating supply grows, ensuring that Moony’s distribution is entirely market-driven, demand-responsive, and algorithmically defined.
+The Reserve Contract governs all token unlocking and redemption. Users can unlock Moony by depositing USDF, a U.S. dollar–backed stablecoin issued by Flipcash Inc., into the Reserve Contract. Pricing is determined by a deterministic bonding curve that increases as circulating supply grows, ensuring that Moony’s distribution is entirely market-driven, demand-responsive, and algorithmically defined.
 
 Moony’s approach replaces discretionary allocation with transparent rules. It eliminates intermediaries, gatekeepers, and the need for governance over monetary supply. Instead, it adopts a capital-based issuance model known as Proof of Liquidity (PoL), a mechanism that anchors every Moony token to value held onchain.
 
@@ -16,8 +16,8 @@ Moony’s approach replaces discretionary allocation with transparent rules. It 
 
 - **Fixed Supply:** The supply of Moony is capped at 21 million tokens. This cap is hard-coded into the Reserve Contract and cannot be changed.
 - **Fair Distribution:** No tokens are premined or reserved for any team, treasury, founder, or investor. All tokens enter circulation via the same permissionless mechanism.
-- **Permissionless:** Anyone can mint or redeem Moony through the Reserve Contract, without intermediaries, approvals, whitelisting, or KYC.
-- **Proof of Liquidity:** All USDF deposited to mint Moony remains locked in the Reserve Contract as liquidity. This provides a source of redemption and public proof that supply is backed.
+- **Permissionless:** Anyone can unlock or redeem Moony through the Reserve Contract, without intermediaries, approvals, whitelisting, or KYC.
+- **Proof of Liquidity:** All USDF deposited to unlock Moony remains locked in the Reserve Contract as liquidity. This provides a source of redemption and public proof that supply is backed.
 - **Bonding Curve:** Moony’s price is determined by an onchain bonding curve. The more tokens minted, the higher the price. When tokens are redeemed, price adjusts accordingly, ensuring alignment between supply and market demand.
 
 ::: tip click-here-tip

@@ -23,9 +23,9 @@ Participation is open and merit based. Contributions that improve utility, secur
 
 ## Incentive Structure
 
-Moony’s economic architecture aligns individual incentives with collective growth. The Proof of Liquidity model mints new tokens only when participants deposit USDF into the Reserve Contract, which expands liquidity and distributes supply in direct response to demand. Deposits remain onchain as verifiable liquidity that supports redemptions and deepens market depth over time.
+Moony’s economic architecture aligns individual incentives with collective growth. The Proof of Liquidity model unlocks tokens from the pre-minted supply only when participants deposit USDF into the Reserve Contract, which expands liquidity and distributes supply in direct response to demand. Deposits remain onchain as verifiable liquidity that supports redemptions and deepens market depth over time.
 
-Pricing follows a bonding curve, a deterministic onchain function that increases the cost of newly minted tokens as adoption grows through integrations, transaction volume, or broader use. This creates direct alignment: contributors who expand utility or strengthen infrastructure improve network resilience and may benefit from the appreciation of assets acquired earlier at lower marginal cost.
+Pricing follows a bonding curve, a deterministic onchain function that increases the cost of newly unlocked tokens as adoption grows through integrations, transaction volume, or broader use. This creates direct alignment: contributors who expand utility or strengthen infrastructure improve network resilience and may benefit from the appreciation of assets acquired earlier at lower marginal cost.
 
 There is no central treasury, corporate owner, or administrative control. Value accrues organically to those who act by building, integrating, educating, or transacting. In this model, network growth is self-reinforcing: individual contribution and collective value creation move together.
 

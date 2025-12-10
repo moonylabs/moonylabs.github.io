@@ -10,13 +10,13 @@ This design architecture removes allocation discretion and centralized control e
 
 ## Core Mechanisms
 
-- **Proof of Liquidity:** Moony adopts a Proof of Liquidity (PoL) model, where all USDF used to mint tokens remains locked in the Reserve Contract as onchain collateral. This capital base enables trustless redemptions and grows organically with demand. The Reserve never loans, moves, or rehypothecates funds, every USDF remains verifiably onchain.
+- **Proof of Liquidity:** Moony adopts a Proof of Liquidity (PoL) model, where all USDF used to unlock tokens remains locked in the Reserve Contract as onchain collateral. This capital base enables trustless redemptions and grows organically with demand. The Reserve never loans, moves, or rehypothecates funds, every USDF remains verifiably onchain.
 
 ::: tip click-here-tip
 [Learn more about the Proof of Liquidity model](/tokenomics/proof-of-liquidity)
 :::
 
-- **Bonding Curve:** Moony’s price is governed by a deterministic bonding curve embedded in the contract. As more tokens are minted and enter circulation, the marginal price to mint increases. When Moony is redeemed and burned, the curve dynamically adjusts downward. This creates a transparent, non-manipulable pricing mechanism tied directly to supply.
+- **Bonding Curve:** Moony’s price is governed by a deterministic bonding curve embedded in the contract. As more tokens are unlocked and enter circulation, the marginal price to unlock increases. When Moony is redeemed and locked, the curve dynamically adjusts downward. This creates a transparent, non-manipulable pricing mechanism tied directly to supply.
 
 ::: tip click-here-tip
 [Learn more about the reserve's bonding curve](/tokenomics/bonding-curve)

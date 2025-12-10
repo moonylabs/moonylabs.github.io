@@ -29,9 +29,9 @@ Key Principles:
 
 ## Distribution
 
-New Moony tokens enter circulation through deposits into a smart contract Reserve. Participants mint tokens by depositing USDF, and the bonding curve determines the exchange rate. Every token issued leaves an equivalent amount of value inside the network, all liquidity remains in the Reserve, backing the circulating supply and enabling redemption.
+New Moony tokens enter circulation through deposits into a smart contract Reserve. All 21,000,000 tokens are minted during contract initialization and held in a locked state. Participants unlock tokens by depositing USDF, and the bonding curve determines the exchange rate. Every token unlocked leaves an equivalent amount of value inside the network, all liquidity remains in the Reserve, backing the circulating supply and enabling redemption.
 
-This is not a pre-mine or a developer-controlled distribution. There are no team allocations, no venture capital tranches, and no centralized treasury. The entire supply begins unminted and remains available to any participant willing to contribute capital to the protocol.
+This is not a pre-mine or a developer-controlled distribution. There are no team allocations, no venture capital tranches, and no centralized treasury. The entire supply is pre-minted during initialization and remains locked until unlocked by participants willing to contribute capital to the protocol.
 
 ::: tip click-here-tip
 [Learn more about the Reserve Contract](/tokenomics/reserve-contract)
@@ -61,7 +61,7 @@ Use Case Examples:
 
 - **Users can say “send me 500 Bits” instead of ⍜0.00000500**
 
-These representations are especially valuable in consumer applications, mobile apps, and cultural contexts where ease of understanding matters. Every Moony and every Bit is fully fungible. There are no token classes, no priority minting, and no hidden privileges. Whether minted on day one or year ten, each token carries equal weight and value. This universality supports Moony’s role as a neutral, protocol-level asset across the decentralized economy.
+These representations are especially valuable in consumer applications, mobile apps, and cultural contexts where ease of understanding matters. Every Moony and every Bit is fully fungible. There are no token classes, no priority unlocking, and no hidden privileges. Whether unlocked on day one or year ten, each token carries equal weight and value. This universality supports Moony’s role as a neutral, protocol-level asset across the decentralized economy.
 
 ## Visual Representation
 

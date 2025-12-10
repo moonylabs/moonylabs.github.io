@@ -4,7 +4,7 @@
       <div class="contract-card" v-if="config.reserveContractAddress">
         <div class="contract-header">
           <h4>USDF Reserve Contract</h4>
-          <small>Holds all USDF deposits used to mint MNY</small>
+          <small>Holds all USDF deposits used to unlock MNY</small>
         </div>
         <div class="contract-address">
           <code>{{ config.reserveContractAddress }}</code>
@@ -42,7 +42,7 @@
       <div class="contract-card" v-if="config.moonyVaultAddress">
         <div class="contract-header">
           <h4>Moony Vault</h4>
-          <small>Holds unminted MNY tokens (21M supply)</small>
+          <small>Holds locked MNY tokens from the pre-minted supply (21M total)</small>
         </div>
         <div class="contract-address">
           <code>{{ config.moonyVaultAddress }}</code>

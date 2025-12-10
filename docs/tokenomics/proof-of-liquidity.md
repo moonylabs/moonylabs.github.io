@@ -10,17 +10,17 @@ Moony uses a distribution mechanism called Proof of Liquidity (PoL), implemented
 
 Each Moony token is issued in exchange for USDF, a dollar-pegged stablecoin issued by Flipcash Inc. This pairing provides familiar dollar‑based valuation and lowers the entry barrier for new participants. 
 
-The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
+The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are unlocked, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
 ## Key Properties
 
-- **Permissionless:** Anyone can mint Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
-- **Proof of Liquidity:** Capital used to mint Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
-- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are minted. This ensures that supply issuance is aligned with real demand.
+- **Permissionless:** Anyone can unlock Moony by interacting directly with the reserve contract, with no approvals or intermediaries required.
+- **Proof of Liquidity:** Capital used to unlock Moony remains in the reserve, supporting redemptions and ensuring liquidity to support the market as it grows.
+- **Bonding Curve:** Token pricing is governed by a deterministic bonding curve, meaning the price increases as more tokens are unlocked. This ensures that supply issuance is aligned with real demand.
 
 ## Capital-Based Mining
 
-Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants mint Moony by depositing USDF directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
+Moony’s Proof of Liquidity (PoL) mechanism offers a capital‑driven alternative to traditional Proof‑of‑Work (PoW) distribution models. Instead of consuming vast amounts of energy through specialized hardware to compete for block rewards, participants unlock Moony by depositing USDF directly into the on‑chain Reserve Contract. This shifts issuance from energy‑intensive computation to verifiable, capital‑based participation.
 
 This model redefines mining as a constructive economic activity rather than an extractive one. Each deposit not only mints new Moony but also strengthens the network by adding permanent, redeemable on‑chain liquidity. Where traditional mining externalizes environmental costs, PoL compounds value inside the ecosystem, aligning participant incentives with collective benefit.
 

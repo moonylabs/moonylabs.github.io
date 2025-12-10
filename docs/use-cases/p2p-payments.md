@@ -41,7 +41,7 @@ Moony’s peer‑to‑peer architecture offers a different path: one that bypass
 
 ## Interoperable Access
 
-Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fully interoperable and not bound to any single interface or platform. From the moment it is minted, Moony is part of a broader composable ecosystem where users and developers can freely move, store, and integrate the asset without permission. This open design not only reinforces Moony’s role as decentralized digital cash but also guarantees that its utility can expand organically across a variety of independent applications.
+Moony is issued as an SPL token on the Solana blockchain, ensuring that it is fully interoperable and not bound to any single interface or platform. All 21,000,000 tokens are minted during contract initialization and held in a locked state until unlocked through purchases. From the moment tokens are unlocked, Moony is part of a broader composable ecosystem where users and developers can freely move, store, and integrate the asset without permission. This open design not only reinforces Moony’s role as decentralized digital cash but also guarantees that its utility can expand organically across a variety of independent applications.
 
 Several key properties enable this interoperability:
 
