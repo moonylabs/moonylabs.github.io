@@ -269,8 +269,6 @@ Moony's price discovery is governed by an on‑chain bonding curve, a determinis
 
 This mechanism applies symmetrically to both minting and redemption. When new MNY is issued, the curve calculates the cost in USDF according to current circulating supply; when MNY is redeemed, it determines the USDF return using the same logic. As circulating supply increases, the curve raises the price in a non‑linear fashion. This exponential structure is intentional: it rewards early participation with lower entry costs, requires later participants to contribute proportionally more liquidity, and naturally reinforces MNY's scarcity over time.
 
-#### Core Principles
-
 <div class="formula-card">
 <div class="formula-header">
 <h4>Core Principles</h4>
