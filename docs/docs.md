@@ -234,8 +234,6 @@ By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves
 
 Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost‑efficient entry into the ecosystem. Redemptions, selling MNY back to the Reserve Contract for USDF, incur a 1% fee.
 
-This mechanism serves two purposes:
-
 <div class="formula-card">
 <div class="formula-header">
 <h4>Fee Model</h4>
