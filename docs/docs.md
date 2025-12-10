@@ -949,12 +949,6 @@ There is no formal boundary between who is considered a "user" and who is consid
 
 Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
 
-This structure allows Moony to grow organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
-
-Economic participation flows naturally from these contributions without requiring coordinated management. As Moony is used, integrated, and circulated, liquidity deepens, utility expands, and real-world demand emerges through voluntary exchange. No single group directs this process. It is the aggregate result of many independent decisions interacting through the same open protocol.
-
-In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
-
 #### Moony Labs
 
 Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. From the moment the protocol was published on-chain, it became an autonomous system that anyone may use, study, integrate, extend, or build upon without permission. The protocol was not created to be operated as a company product, nor to remain under the control, direction, or discretion of its deploying entity. Rather, its design assumes independence from the outset, with the deployment itself serving as the sole foundational contribution of Moony Labs to the network.
@@ -970,6 +964,14 @@ To support transparency and reproducibility, moonylabs.com points to the public 
 At present, Moony Labs does not conduct marketing, community management, ecosystem coordination, protocol governance, or financial services. It does not operate social media accounts, collect user data, issue grants, or act as a governing authority. Its non-operational posture reflects a deliberate design choice to ensure that no ongoing managerial effort is required for Moony to exist, grow, or function.
 
 This structure ensures that Moony does not depend on continued performance, promotion, or stewardship from its publisher. No future development, maintenance, marketing, or economic return is promised or implied. From the moment of publication, Moony exists as a permissionless public good. Its value, culture, and long-term trajectory are shaped not by Moony Labs, but by the broader community of developers, users, educators, businesses, and independent contributors who choose to participate in its ecosystem.
+
+### Network Coordination
+
+The Moony network grows organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
+
+Economic participation flows naturally from stakeholder contributions without requiring coordinated management. As Moony is used, integrated, and circulated, liquidity deepens, utility expands, and real-world demand emerges through voluntary exchange. No single group directs this process. It is the aggregate result of many independent decisions interacting through the same open protocol.
+
+In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
 
 The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
