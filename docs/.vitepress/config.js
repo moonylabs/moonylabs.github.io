@@ -1,9 +1,28 @@
 export default {
   title: 'Moony Labs LLC',
-  titleTemplate: (title) => title ? `${title} | Moony Labs LLC` : 'Moony Labs LLC',
+  titleTemplate: '%s | Moony Labs LLC',
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
+  transformHead: ({ pageData, siteData }) => {
+    const pageTitle = pageData.frontmatter?.title || pageData.title
+    const title = pageTitle && pageTitle !== siteData.title
+      ? `${pageTitle} | Moony Labs LLC`
+      : 'Moony Labs LLC'
+    const description = pageData.frontmatter?.description || siteData.description
+    const path = pageData.relativePath === 'index.md' 
+      ? '/' 
+      : '/' + pageData.relativePath.replace(/\.md$/, '').replace(/\/index$/, '')
+    const url = `https://moonylabs.com${path}`
+    
+    return [
+      ['meta', { property: 'og:title', content: title }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:url', content: url }],
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: description }],
+    ]
+  },
   markdown: {
     toc: {
       level: [2, 3]
@@ -30,18 +49,13 @@ export default {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
-    ['meta', { property: 'og:title', content: 'Moony Labs LLC' }],
-    ['meta', { property: 'og:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
     ['meta', { property: 'og:site_name', content: 'Moony Labs LLC' }],
-    ['meta', { property: 'og:url', content: 'https://moonylabs.com/' }],
     ['meta', { property: 'og:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['meta', { property: 'og:image:width', content: '1920' }],
     ['meta', { property: 'og:image:height', content: '1080' }],
     ['meta', { property: 'og:image:type', content: 'image/png' }],
     ['meta', { property: 'og:image:alt', content: 'Moony Protocol - Decentralized Digital Value' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: 'Moony Labs LLC' }],
-    ['meta', { name: 'twitter:description', content: 'Peer-to-Peer Digital Cash Mined With Liquidity' }],
     ['meta', { name: 'twitter:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['script', {}, `
       // Force light mode and prevent theme switching - Enhanced version

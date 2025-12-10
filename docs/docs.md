@@ -1,5 +1,6 @@
 ---
 title: Docs
+description: Peer-to-Peer Digital Cash Mined With Liquidity
 ---
 
 ::: warning ⚠️ Confidential & Under Construction
