@@ -166,8 +166,6 @@ Each MNY token is issued in exchange for USDF, a dollar-pegged stablecoin issued
 
 The Moony reserve contract holds all USDF deposits as onchain liquidity, enabling redemptions and anchoring supply in verifiable value. Token pricing is determined by a bonding curve, a deterministic function that increases cost as more tokens are minted, ensuring that issuance is transparent, demand-driven, and algorithmically defined.
 
-#### Key Properties
-
 <div class="formula-card">
 <div class="formula-header">
 <h4>Key Properties</h4>
