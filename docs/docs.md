@@ -165,7 +165,7 @@ Acquiring MNY directly from the Reserve Contract carries no fee, enabling cost�
 This mechanism serves two purposes:
 
 - **Security**: The fee mitigates the risk of sandwich attacks, a form of front‑running in which automated bots attempt to profit from predictable price movements by inserting transactions around a user's trade.
-- **Infrastructure Support**: Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/documents#infrastructure-provider)).
+- **Infrastructure Support**: Fee proceeds are directed to Flipcash Inc., the infrastructure provider that developed the Reserve Contract architecture (see [Infrastructure Provider section](/docs#infrastructure-provider)).
 
 The sell‑side fee applies only to redemptions executed directly against the Reserve Contract. Peer‑to‑peer transfers and secondary market transactions, whether on centralized or decentralized exchanges, are not subject to this fee.
 
