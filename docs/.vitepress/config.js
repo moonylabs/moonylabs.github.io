@@ -1,22 +1,22 @@
 export default {
-  title: 'Moony Labs LLC',
+  title: 'Moony Labs',
   titleTemplate: (title) => {
     // If no page title or it's the homepage, return just site title
-    if (!title || title === 'Moony Labs LLC') {
-      return 'Moony Labs LLC'
+    if (!title || title === 'Moony Labs') {
+      return 'Moony Labs'
     }
-    // Format as "Moony Labs LLC | Page Title"
-    return `Moony Labs LLC | ${title}`
+    // Format as "Moony Labs | Page Title"
+    return `Moony Labs | ${title}`
   },
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
   transformHead: ({ pageData, siteData }) => {
     const pageTitle = pageData.frontmatter?.title || pageData.title
-    // Format as "Moony Labs LLC | Page Title" or just "Moony Labs LLC" for homepage
+    // Format as "Moony Labs | Page Title" or just "Moony Labs" for homepage
     const title = pageTitle && pageTitle !== siteData.title && pageData.relativePath !== 'index.md'
-      ? `Moony Labs LLC | ${pageTitle}`
-      : 'Moony Labs LLC'
+      ? `Moony Labs | ${pageTitle}`
+      : 'Moony Labs'
     const description = pageData.frontmatter?.description || siteData.description
     const path = pageData.relativePath === 'index.md' 
       ? '/' 
@@ -57,7 +57,7 @@ export default {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
-    ['meta', { property: 'og:site_name', content: 'Moony Labs LLC' }],
+    ['meta', { property: 'og:site_name', content: 'Moony Labs' }],
     ['meta', { property: 'og:image', content: 'https://moonylabs.com/socialshare.png' }],
     ['meta', { property: 'og:image:width', content: '1920' }],
     ['meta', { property: 'og:image:height', content: '1080' }],
@@ -71,16 +71,16 @@ export default {
         function updateTitle() {
           const path = window.location.pathname
           if (path === '/' || path === '/index.html') {
-            document.title = 'Moony Labs LLC'
+            document.title = 'Moony Labs'
           } else if (path === '/docs' || path === '/docs.html') {
-            document.title = 'Moony Labs LLC | Docs'
+            document.title = 'Moony Labs | Docs'
           } else {
             // For other pages, try to get title from page
             const pageTitle = document.querySelector('h1')?.textContent?.trim()
-            if (pageTitle && pageTitle !== 'Moony Labs LLC') {
-              document.title = \`Moony Labs LLC | \${pageTitle}\`
+            if (pageTitle && pageTitle !== 'Moony Labs') {
+              document.title = \`Moony Labs | \${pageTitle}\`
             } else {
-              document.title = 'Moony Labs LLC'
+              document.title = 'Moony Labs'
             }
           }
         }

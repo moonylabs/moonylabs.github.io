@@ -30,9 +30,9 @@ export default {
         const route = router.getRoutes().find(r => r.path === to.path)
         const pageTitle = route?.meta?.frontmatter?.title || route?.meta?.title
         if (pageTitle && to.path !== '/') {
-          document.title = `Moony Labs LLC | ${pageTitle}`
+          document.title = `Moony Labs | ${pageTitle}`
         } else {
-          document.title = 'Moony Labs LLC'
+          document.title = 'Moony Labs'
         }
       })
       
@@ -40,9 +40,9 @@ export default {
       setTimeout(() => {
         const currentPath = window.location.pathname
         if (currentPath === '/' || currentPath === '/index.html') {
-          document.title = 'Moony Labs LLC'
+          document.title = 'Moony Labs'
         } else if (currentPath === '/docs' || currentPath === '/docs.html') {
-          document.title = 'Moony Labs LLC | Docs'
+          document.title = 'Moony Labs | Docs'
         }
       }, 100)
     }
