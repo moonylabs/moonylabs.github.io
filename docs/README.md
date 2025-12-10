@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="public/moony-logo.png" alt="Moony Logo" width="300">
+</div>
+
 # Moony Documentation
 
 > **🌐 [Visit moonylabs.com →](https://moonylabs.com)**
