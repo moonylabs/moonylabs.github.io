@@ -1185,12 +1185,16 @@ html.dark {
   color: #1e293b !important;
 }
 
-/* Ensure subsections (H3) are normal weight - override the universal rule */
+/* Ensure subsections (H3) are normal weight - override the universal rule with more specificity */
 .VPDocAside ul > li > ul > li > a,
 .VPDocAside .content-container > ul > li > ul > li > a,
+.VPDocAside .content-container ul > li > ul > li > a,
 .VPDocAside a[href*="#stakeholders"],
 .VPDocAside a[href*="#coordination"],
-.VPDocAside a[href*="#resources"] {
+.VPDocAside a[href*="#resources"],
+.VPDocAside a[href*="#incentive-alignment"],
+.VPDocAside a[href*="#brand-identity"],
+.VPDocAside a[href*="#getting-started"] {
   font-weight: normal !important;
   font-size: 14px !important;
   color: #64748b !important;
