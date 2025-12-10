@@ -638,17 +638,48 @@ There is no formal boundary between who is considered a "user" and who is consid
 
 Participation takes many forms, including but not limited to:
 
-- **Transact:** Sending and receiving Moony in peer to peer exchange, daily payments, tipping, remittances, or micro transactions between individuals and services.
-
-- **Build:** Developing wallets, applications, integrations, developer tools, analytics, and supporting infrastructure that increases usability, security, and reach.
-
-- **Integrate:** Adding Moony as a supported currency within platforms, marketplaces, payment flows, content systems, games, and financial services.
-
-- **Educate:** Producing documentation, tutorials, guides, events, research, and learning resources that help others understand, adopt, and safely use Moony.
-
-- **Organize:** Forming communities, regional groups, online forums, and thematic networks that coordinate local adoption, outreach, and support.
-
-- **Express:** Shaping culture through storytelling, visual design, media, art, memes, and narratives that give Moony social meaning and shared identity.
+<div class="formula-card">
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Transact</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Sending and receiving Moony in peer to peer exchange, daily payments, tipping, remittances, or micro transactions between individuals and services.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Build</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Developing wallets, applications, integrations, developer tools, analytics, and supporting infrastructure that increases usability, security, and reach.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Integrate</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Adding Moony as a supported currency within platforms, marketplaces, payment flows, content systems, games, and financial services.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Educate</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Producing documentation, tutorials, guides, events, research, and learning resources that help others understand, adopt, and safely use Moony.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Organize</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Forming communities, regional groups, online forums, and thematic networks that coordinate local adoption, outreach, and support.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Express</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Shaping culture through storytelling, visual design, media, art, memes, and narratives that give Moony social meaning and shared identity.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
 
