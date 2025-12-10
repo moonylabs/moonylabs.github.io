@@ -3,6 +3,7 @@ export default {
   description: 'Permissionless transactions with Proof of Liquidity',
   base: '/',
   appearance: false,
+  cleanUrls: true,
   markdown: {
     toc: {
       level: [2, 3]
