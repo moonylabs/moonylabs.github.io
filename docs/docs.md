@@ -202,8 +202,6 @@ This model redefines mining as a constructive economic activity rather than an e
 
 By combining PoL with Solana's carbon‑efficient infrastructure, Moony achieves a distribution model that is both sustainable and economically reinforcing. Every minted token leaves lasting value in the network, deepens market liquidity, and ensures that growth reflects genuine demand, creating a self‑sustaining framework for the issuance of scarce digital assets.
 
-This process is:
-
 <div class="formula-card">
 <div class="formula-header">
 <h4>Capital-Based Mining</h4>
