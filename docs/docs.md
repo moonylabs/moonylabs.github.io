@@ -113,8 +113,6 @@ This two-way mechanism allows users to enter and exit the system freely, without
 
 
 
-#### Design Principles
-
 <div class="formula-card">
 <div class="formula-header">
 <h4>Design Principles</h4>
