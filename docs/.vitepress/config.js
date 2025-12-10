@@ -87,7 +87,7 @@ export default {
           const currentPath = window.location.pathname;
           
           // Only run scroll spy on the Complete Documentation page
-          if (currentPath.includes('/documents')) {
+          if (currentPath.includes('/docs')) {
             const sections = document.querySelectorAll('h1, h2, h3');
             const sidebarLinks = document.querySelectorAll('.VPSidebar a');
             
