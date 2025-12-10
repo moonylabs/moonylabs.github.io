@@ -413,23 +413,33 @@ Moony serves as shared infrastructure across a growing ecosystem of independent 
 
 Moony's design naturally supports a broad range of use cases as adoption grows:
 
-- **Peer-to-Peer Payments:** Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive MNY anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.
-
-::: tip 
-Learn more about how Moony can be used for P2P Payments. 
-:::
-
-- **Micropayments:** MNY's divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can't handle. From pay‑per‑use digital content to streaming payments, MNY unlocks new economic models that previously required centralized platforms with high fees.
-
-::: tip 
-Learn more about how Moony can be used for Micropayments. 
-:::
-
-- **Decentralized Finance (DeFi):** MNY can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use MNY in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.
-
-::: tip 
-Learn more about how Moony can be used in (DeFi).
-:::
+<div class="formula-card">
+<div class="formula-header">
+<h4>Potential Use Cases</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Peer-to-Peer Payments</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Moony enables instant, borderless transfers of value between individuals without intermediaries. Users can send and receive MNY anywhere in the world with full on‑chain transparency and finality, empowering truly permissionless digital cash transactions.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Micropayments</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">MNY's divisibility and low‑cost on‑chain settlement make it ideal for very small transactions that traditional financial rails can't handle. From pay‑per‑use digital content to streaming payments, MNY unlocks new economic models that previously required centralized platforms with high fees.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Decentralized Finance (DeFi)</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">MNY can integrate seamlessly into the growing ecosystem of on‑chain financial protocols in the Solana ecosystem. Holders can use MNY in liquidity pools, decentralized exchanges, or lending protocols, expanding its utility as an interoperable, permissionless asset in DeFi.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 These examples demonstrate Moony's flexibility as a foundational layer, rather than a tool confined to a single application or vertical. Its long-term utility will be defined by open participation and the ingenuity of independent developers, communities, and platforms. Engineered for composability and permissionless integration, Moony's ecosystem expands organically as new participants build on top of it. Each integration strengthens its position as a decentralized public good, resilient, adaptive, and free from centralized control.
 
