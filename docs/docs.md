@@ -450,15 +450,6 @@ Moony's design naturally supports a broad range of use cases as adoption grows:
 
 These examples demonstrate Moony's flexibility as a foundational layer, rather than a tool confined to a single application or vertical. Its long-term utility will be defined by open participation and the ingenuity of independent developers, communities, and platforms. Engineered for composability and permissionless integration, Moony's ecosystem expands organically as new participants build on top of it. Each integration strengthens its position as a decentralized public good, resilient, adaptive, and free from centralized control.
 
-#### Community Participation
-
-Moony's long-term growth depends not on central coordination, but on the initiative and creativity of its community. Developers, creators, educators, organizers, and everyday users all play a role in shaping the ecosystem. Whether by building new integrations, hosting local meetups, contributing tutorials, or simply transacting in MNY, each action strengthens the network and reinforces its value as a public good.
-
-This permissionless model invites diverse forms of participation. Communities can form around shared values, cultural identities, or local needs, building micro-economies that thrive on open infrastructure and collective ownership. The Moony ecosystem is not governed from the top down; it is grown from the ground up.
-
-::: tip click-here-tip
-[Explore ways to get involved in the Moony community](/resources/community)
-:::
 
 ### P2P Payments
 
