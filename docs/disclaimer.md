@@ -27,17 +27,53 @@ aside: false
 }
 </style>
 
-# General Disclaimer
+# Moony Labs LLC Disclaimer
 
-This documentation is provided for informational and educational purposes only. It does not constitute financial, investment, legal, tax, or any other form of professional advice. Nothing contained herein should be interpreted as a recommendation, solicitation, or endorsement to acquire, hold, use, or dispose of any digital asset or to engage in any particular transaction or strategy.
+## 1. General Disclaimer
 
-Moony is a decentralized protocol and associated digital asset governed by an immutable smart contract deployed on the Solana blockchain. Once published on-chain, the protocol operates autonomously according to its code. No representation is made that the protocol will perform as intended, maintain any particular value, or achieve any specific outcome.
+This documentation is provided for informational and educational purposes only. It does not constitute financial, investment, legal, tax, or any other form of professional advice. Nothing contained herein should be interpreted as a recommendation, solicitation, or endorsement to acquire, hold, use, or dispose of any digital asset, or to engage in any particular transaction or strategy.
 
-Participation in the Moony protocol is entirely voluntary and undertaken at the user's own risk. Users are strongly encouraged to conduct independent research, seek qualified professional advice, and exercise caution when interacting with blockchain-based systems.
+Use of this documentation or interaction with any blockchain-based system is voluntary and undertaken entirely at the user's own risk. Users are encouraged to conduct independent research, seek qualified professional advice, and exercise caution when engaging with decentralized technologies.
 
 ---
 
-## Risks of Blockchain Interaction
+## 2. Moony Protocol Overview
+
+Moony is a decentralized protocol and associated digital asset governed by an immutable smart contract deployed on the Solana blockchain.
+
+Once published on-chain, the protocol operates autonomously according to its code. It is self-executing, permissionless, and not dependent on any company, organization, or individual for its operation. No representation is made that the protocol will perform as intended, maintain any particular value, or achieve any specific outcome.
+
+---
+
+## 3. Moony Labs' Role
+
+Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. Its involvement is intentionally limited and defined as follows.
+
+### Deployment Only
+
+Moony Labs' sole role was the initial publication of the protocol on-chain. The protocol was not created to operate as a company product, nor to remain under the control, direction, or discretion of its deploying entity.
+
+### No Ownership or Economic Participation
+
+Moony Labs does not hold any allocation of the MNY token supply, does not receive proceeds from the reserve contract, and does not participate in the economic flows of the protocol. The protocol was published without venture financing, token pre-sales, equity issuance, or investor-linked performance expectations.
+
+### No Control or Authority
+
+Following deployment, Moony Labs does not control token supply, operate privileged keys, retain upgrade authority, or possess any ability to modify, pause, upgrade, or otherwise interfere with the protocol. There are no administrative controls, backdoors, or retained permissions.
+
+### No Ongoing Operations
+
+Moony Labs does not operate the network, manage communities, conduct marketing, provide financial services, collect user data, issue grants, or coordinate ecosystem activity. It does not act as a governing authority or centralized steward of the protocol.
+
+### No Future Obligations
+
+No ongoing development, maintenance, promotion, or stewardship is promised or implied. The protocol does not depend on continued involvement by Moony Labs to exist, function, or grow.
+
+This structure is intentional. By relinquishing ongoing control and responsibility, Moony Labs ensures that Moony exists as neutral public infrastructure, free to evolve through the independent actions of its participants rather than centralized coordination.
+
+---
+
+## 4. Risks, No Warranties, and No Liability
 
 Blockchain technologies, including the Solana network and the Moony protocol, involve inherent risks, including but not limited to:
 
@@ -50,25 +86,13 @@ Blockchain technologies, including the Solana network and the Moony protocol, in
 
 Digital assets may experience extreme volatility or lose all value. Transactions on public blockchains are irreversible. Users assume full responsibility for all risks associated with interacting with the Moony protocol or any related digital assets.
 
-To the maximum extent permitted by law, Moony Labs disclaims all liability for losses, damages, or claims arising from use of the protocol or reliance on this documentation.
+The protocol and all associated documentation are provided "as is" and "as available." Moony Labs makes no representations or warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, security, accuracy, or non-infringement.
+
+To the maximum extent permitted by law, Moony Labs LLC disclaims all liability for any direct, indirect, incidental, consequential, special, or punitive damages arising from use of the protocol, reliance on this documentation, or interaction with blockchain systems, even if advised of the possibility of such damages.
 
 ---
 
-## Moony Labs' Role
-
-Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. Upon deployment, the protocol became an autonomous system that may be used, studied, integrated, extended, or built upon by anyone without permission.
-
-The protocol was not created to operate as a company product, nor to remain under the control, direction, or discretion of its deploying entity. Its design assumes independence from the outset, with deployment serving as Moony Labs' sole foundational contribution.
-
-Prior to deployment, Moony Labs did not conduct a funding round, issue equity, sell token allocations, or enter into contractual obligations tied to the future performance of the protocol. The protocol was published without venture financing, token pre-sales, or investor-linked performance expectations.
-
-Moony Labs does not receive proceeds from the protocol's reserve contract and does not participate in the economic flows of the system. It does not operate privileged keys, control token supply, or retain any authority to modify, pause, upgrade, or otherwise interfere with the protocol. There are no administrative controls, backdoors, or upgrade authorities retained by Moony Labs following deployment.
-
-This separation is intentional. By relinquishing ongoing control, Moony Labs ensures that Moony does not derive its legitimacy, direction, or economic behavior from any single organization. The protocol exists as neutral infrastructure, free to evolve through the independent actions of its participants rather than through centralized coordination.
-
----
-
-## Open Source and Documentation
+## 5. Open Source and Documentation
 
 For transparency and reproducibility, moonylabs.com references public GitHub repositories and technical documentation associated with the original deployment. These materials are provided as open reference resources for developers, researchers, and builders.
 
@@ -76,32 +100,19 @@ While Moony Labs may continue to host or reference these materials for informati
 
 ---
 
-## Non-Operational Posture
+## 6. Regulatory Considerations
 
-Moony Labs does not engage in ongoing protocol operation, governance, or ecosystem coordination. It does not conduct marketing, manage communities, issue grants, provide financial services, collect user data, or act as a governing authority.
+Nothing in this documentation should be interpreted as creating or implying any regulatory classification, compliance status, or legal characterization of the Moony protocol or associated digital assets.
 
-No future development, maintenance, promotion, or stewardship is promised or implied. Moony does not depend on continued involvement by Moony Labs to exist, function, or grow.
-
-The protocol's value, culture, and long-term trajectory are shaped by the broader community of developers, users, educators, businesses, and independent contributors who choose to participate.
+Regulatory treatment of blockchain technologies and digital assets varies by jurisdiction and may change over time. Users are solely responsible for understanding and complying with all applicable laws and regulations in their jurisdiction.
 
 ---
 
-## No Warranties or Guarantees
-
-The Moony protocol and all associated documentation are provided "as is" and "as available." Moony Labs makes no representations or warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, security, accuracy, or non-infringement.
-
-To the fullest extent permitted by law, Moony Labs shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising from use of the protocol, this documentation, or any related materials, even if advised of the possibility of such damages.
-
----
-
-## Regulatory Considerations
-
-Nothing in this documentation should be interpreted as creating or implying any regulatory classification, compliance status, or legal characterization of the Moony protocol or associated digital assets. Regulatory treatment of blockchain technologies and digital assets varies by jurisdiction and may change over time.
-
-Users are solely responsible for understanding and complying with all applicable laws and regulations in their jurisdiction.
-
----
-
-## Updates to This Disclaimer
+## 7. Updates and Contact
 
 Moony Labs reserves the right to update this disclaimer at any time. Changes will be posted on this page with the updated date. Continued access to or use of the documentation constitutes acceptance of any such modifications.
+
+**Last updated:** December 16, 2025
+
+**For inquiries, contact:** info@moonylabs.com  
+*Responses are provided for informational purposes only and do not create any relationship, obligation, or duty.*
