@@ -949,22 +949,6 @@ There is no formal boundary between who is considered a "user" and who is consid
 
 Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
 
-#### Moony Labs
-
-Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. From the moment the protocol was published on-chain, it became an autonomous system that anyone may use, study, integrate, extend, or build upon without permission. The protocol was not created to be operated as a company product, nor to remain under the control, direction, or discretion of its deploying entity. Rather, its design assumes independence from the outset, with the deployment itself serving as the sole foundational contribution of Moony Labs to the network.
-
-Prior to deployment, Moony Labs did not conduct a funding round, issue equity, sell allocations, or enter into contractual obligations tied to the future performance of the protocol. It published Moony without venture financing, token pre-sales, or investor-linked performance expectations. Moony Labs does not hold any allocation of the MNY token supply, does not receive proceeds from the reserve, and does not participate in the economic flows of the system. It does not financially benefit from the adoption, use, or market activity of MNY in any form. The protocol was published without a retained stake.
-
-Following deployment, Moony Labs does not participate in the ongoing operation of the network. It does not control token supply, operate privileged keys, or retain any capacity to modify, pause, upgrade, or otherwise interfere with the protocol. The Moony protocol is fully immutable and self-executing from the moment it is published. There are no backdoors, no administrative controls, and no upgrade authorities.
-
-This separation is not an absence of responsibility. It is the mechanism by which Moony becomes neutral. By relinquishing ongoing control, Moony Labs ensures that Moony does not derive its legitimacy, direction, or economic behavior from any single organization. The network is free to evolve through the independent actions of its participants rather than through centralized coordination.
-
-To support transparency and reproducibility, moonylabs.com points to the public GitHub repositories and technical documentation associated with the original deployment. These resources exist as an open reference for developers, researchers, and builders. While Moony Labs may continue to host these materials for as long as it reasonably can, they are fundamentally part of the open commons. Anyone is free to mirror, archive, or fork them at any time.
-
-At present, Moony Labs does not conduct marketing, community management, ecosystem coordination, protocol governance, or financial services. It does not operate social media accounts, collect user data, issue grants, or act as a governing authority. Its non-operational posture reflects a deliberate design choice to ensure that no ongoing managerial effort is required for Moony to exist, grow, or function.
-
-This structure ensures that Moony does not depend on continued performance, promotion, or stewardship from its publisher. No future development, maintenance, marketing, or economic return is promised or implied. From the moment of publication, Moony exists as a permissionless public good. Its value, culture, and long-term trajectory are shaped not by Moony Labs, but by the broader community of developers, users, educators, businesses, and independent contributors who choose to participate in its ecosystem.
-
 ### Coordination
 
 The Moony network grows organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
