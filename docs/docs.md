@@ -957,6 +957,61 @@ Economic participation flows naturally from stakeholder contributions without re
 
 In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
 
+#### Network Contribution
+
+The Moony network is not composed of fixed roles, titles, or permissions. Instead, it is shaped through open, overlapping modes of participation. Individuals and organizations engage with the system in different ways depending on their skills, intent, and context. A single participant may be a user, a developer, a merchant, and a community organizer over the lifetime of their involvement. These identities are not assigned. They emerge naturally through action.
+
+There is no formal boundary between who is considered a "user" and who is considered a "builder." Anyone can move fluidly between modes of participation as the network evolves and as their relationship to the system changes. This structural openness is foundational to Moony's decentralization. The network does not grow through enrollment, designation, or appointment. It grows through voluntary engagement.
+
+<div class="formula-card">
+<div class="formula-header">
+<h4>Forms of Participation</h4>
+</div>
+<div class="formula-content">
+<div class="curve-constants-grid">
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Transact</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Sending and receiving Moony in peer to peer exchange, daily payments, tipping, remittances, or micro transactions between individuals and services.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Build</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Developing wallets, applications, integrations, developer tools, analytics, and supporting infrastructure that increases usability, security, and reach.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Integrate</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Adding Moony as a supported currency within platforms, marketplaces, payment flows, content systems, games, and financial services.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Educate</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Producing documentation, tutorials, guides, events, research, and learning resources that help others understand, adopt, and safely use Moony.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Organize</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Forming communities, regional groups, online forums, and thematic networks that coordinate local adoption, outreach, and support.</span>
+</div>
+</div>
+<div class="curve-constant-item market-dynamics-item">
+<span class="constant-label">Express</span>
+<div class="constant-value-wrapper">
+<span class="constant-value">Shaping culture through storytelling, visual design, media, art, memes, and narratives that give Moony social meaning and shared identity.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
+
 #### Incentive Alignment
 
 Stakeholders benefit from increasing adoption of the Moony network because it drives demand for the underlying asset. As more participants use, integrate, and build with Moony, the network's utility expands, liquidity deepens, and real-world demand grows. This creates a natural incentive structure where stakeholders' individual contributions align with collective network growth. Developers who build integrations see increased usage of their products. Merchants who accept Moony benefit from a growing user base. Users who hold Moony benefit from expanding utility and network effects. This profit mechanism, built into the protocol's economic design, coordinates stakeholder action without requiring centralized direction or governance.
