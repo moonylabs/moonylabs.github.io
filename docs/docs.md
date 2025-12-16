@@ -895,60 +895,6 @@ Some stakeholders contribute through technical development and infrastructure. O
 
 No single stakeholder group holds inherent control over the protocol. Influence within the network arises from adoption, contribution, and voluntary coordination rather than ownership, hierarchy, or governance authority. This structure allows the Moony network to remain open-ended, censorship-resistant, and resilient across changing conditions.
 
-#### Network Contribution
-
-The Moony network is not composed of fixed roles, titles, or permissions. Instead, it is shaped through open, overlapping modes of participation. Individuals and organizations engage with the system in different ways depending on their skills, intent, and context. A single participant may be a user, a developer, a merchant, and a community organizer over the lifetime of their involvement. These identities are not assigned. They emerge naturally through action.
-
-There is no formal boundary between who is considered a "user" and who is considered a "builder." Anyone can move fluidly between modes of participation as the network evolves and as their relationship to the system changes. This structural openness is foundational to Moony's decentralization. The network does not grow through enrollment, designation, or appointment. It grows through voluntary engagement.
-
-<div class="formula-card">
-<div class="formula-header">
-<h4>Forms of Participation</h4>
-</div>
-<div class="formula-content">
-<div class="curve-constants-grid">
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Transact</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Sending and receiving Moony in peer to peer exchange, daily payments, tipping, remittances, or micro transactions between individuals and services.</span>
-</div>
-</div>
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Build</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Developing wallets, applications, integrations, developer tools, analytics, and supporting infrastructure that increases usability, security, and reach.</span>
-</div>
-</div>
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Integrate</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Adding Moony as a supported currency within platforms, marketplaces, payment flows, content systems, games, and financial services.</span>
-</div>
-</div>
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Educate</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Producing documentation, tutorials, guides, events, research, and learning resources that help others understand, adopt, and safely use Moony.</span>
-</div>
-</div>
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Organize</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Forming communities, regional groups, online forums, and thematic networks that coordinate local adoption, outreach, and support.</span>
-</div>
-</div>
-<div class="curve-constant-item market-dynamics-item">
-<span class="constant-label">Express</span>
-<div class="constant-value-wrapper">
-<span class="constant-value">Shaping culture through storytelling, visual design, media, art, memes, and narratives that give Moony social meaning and shared identity.</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
-
 ### Participation
 
 The Moony network grows organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
