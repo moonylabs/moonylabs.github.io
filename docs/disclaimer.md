@@ -31,6 +31,10 @@ aside: false
 
 This documentation is provided for informational and educational purposes only. It does not constitute financial, investment, legal, tax, or any other form of advice. Moony is a decentralized protocol and digital asset governed by an immutable smart contract on the Solana blockchain. The protocol operates autonomously and cannot be altered, controlled, or influenced by any party after deployment. No company, organization, or individual is responsible for Moony's performance, value, or outcomes. Participants engage with the Moony protocol at their own risk and are strongly encouraged to conduct independent research, seek professional advice, and exercise caution when interacting with blockchain-based systems.
 
+## Risks of Blockchain Interaction
+
+Blockchain technology, including the Solana network and the Moony protocol, involves inherent risks such as volatility, technical failures, cyberattacks, and irreversible transactions. Users should be aware that digital assets like MNY may fluctuate in value or become worthless. Participation is at your own risk, and Moony Labs disclaims all liability for losses or damages.
+
 ## Moony Labs' Role
 
 Moony Labs, LLC deployed the Moony protocol as open, permissionless digital public infrastructure. From the moment the protocol was published on-chain, it became an autonomous system that anyone may use, study, integrate, extend, or build upon without permission. The protocol was not created to be operated as a company product, nor to remain under the control, direction, or discretion of its deploying entity. Rather, its design assumes independence from the outset, with the deployment itself serving as Moony Labs' sole foundational contribution to the network.
@@ -50,10 +54,6 @@ This structure ensures that Moony does not depend on continued performance, prom
 ## No Warranties or Guarantees
 
 Moony Labs makes no representations or warranties, express or implied, regarding the Moony protocol, including but not limited to its fitness for a particular purpose, merchantability, security, or non-infringement. The protocol is provided "as is" and "as available." Users assume all risks associated with interacting with blockchain technology, including potential loss of funds, smart contract vulnerabilities, network congestion, or regulatory changes. Moony Labs shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from use of the protocol or this documentation.
-
-## Risks of Blockchain Interaction
-
-Blockchain technology, including the Solana network and the Moony protocol, involves inherent risks such as volatility, technical failures, cyberattacks, and irreversible transactions. Users should be aware that digital assets like MNY may fluctuate in value or become worthless. Participation is at your own risk, and Moony Labs disclaims all liability for losses or damages.
 
 ## Updates to This Disclaimer
 
