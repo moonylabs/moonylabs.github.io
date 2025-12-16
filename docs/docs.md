@@ -954,7 +954,6 @@ There is no formal boundary between who is considered a "user" and who is consid
 </div>
 </div>
 </div>
-</div>
 
 Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
 
