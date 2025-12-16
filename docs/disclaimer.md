@@ -28,23 +28,17 @@ aside: false
 }
 </style>
 
-# Moony Labs LLC Disclaimer
-
 ## 1. General Disclaimer
 
 This documentation is provided for informational and educational purposes only. It does not constitute financial, investment, legal, tax, or any other form of professional advice. Nothing contained herein should be interpreted as a recommendation, solicitation, or endorsement to acquire, hold, use, or dispose of any digital asset, or to engage in any particular transaction or strategy.
 
 Use of this documentation or interaction with any blockchain-based system is voluntary and undertaken entirely at the user's own risk. Users are encouraged to conduct independent research, seek qualified professional advice, and exercise caution when engaging with decentralized technologies.
 
----
-
 ## 2. Moony Protocol Overview
 
 Moony is a decentralized protocol and associated digital asset governed by an immutable smart contract deployed on the Solana blockchain.
 
 Once published on-chain, the protocol operates autonomously according to its code. It is self-executing, permissionless, and not dependent on any company, organization, or individual for its operation. No representation is made that the protocol will perform as intended, maintain any particular value, or achieve any specific outcome.
-
----
 
 ## 3. Moony Labs' Role
 
@@ -72,8 +66,6 @@ No ongoing development, maintenance, promotion, or stewardship is promised or im
 
 This structure is intentional. By relinquishing ongoing control and responsibility, Moony Labs ensures that Moony exists as neutral public infrastructure, free to evolve through the independent actions of its participants rather than centralized coordination.
 
----
-
 ## 4. Risks, No Warranties, and No Liability
 
 Blockchain technologies, including the Solana network and the Moony protocol, involve inherent risks, including but not limited to:
@@ -91,23 +83,17 @@ The protocol and all associated documentation are provided "as is" and "as avail
 
 To the maximum extent permitted by law, Moony Labs LLC disclaims all liability for any direct, indirect, incidental, consequential, special, or punitive damages arising from use of the protocol, reliance on this documentation, or interaction with blockchain systems, even if advised of the possibility of such damages.
 
----
-
 ## 5. Open Source and Documentation
 
 For transparency and reproducibility, moonylabs.com references public GitHub repositories and technical documentation associated with the original deployment. These materials are provided as open reference resources for developers, researchers, and builders.
 
 While Moony Labs may continue to host or reference these materials for informational purposes, they are fundamentally part of the open commons. Any party may independently mirror, archive, fork, or build upon them in accordance with applicable open-source licenses.
 
----
-
 ## 6. Regulatory Considerations
 
 Nothing in this documentation should be interpreted as creating or implying any regulatory classification, compliance status, or legal characterization of the Moony protocol or associated digital assets.
 
 Regulatory treatment of blockchain technologies and digital assets varies by jurisdiction and may change over time. Users are solely responsible for understanding and complying with all applicable laws and regulations in their jurisdiction.
-
----
 
 ## 7. Updates
 
