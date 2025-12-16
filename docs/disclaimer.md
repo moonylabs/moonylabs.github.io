@@ -1,17 +1,27 @@
 ---
-layout: page
 aside: false
 ---
 
-<style>
-.vp-doc {
+<style scoped>
+/* Hide the aside/sidebar on this page */
+:deep(.VPDocAside) {
+  display: none !important;
+}
+
+/* Center and constrain the content */
+:deep(.VPContent) {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+:deep(.vp-doc) {
   max-width: 800px !important;
   margin: 0 auto !important;
-  padding: 2rem 3rem !important;
+  padding: 2rem 4rem !important;
 }
 
 @media (max-width: 768px) {
-  .vp-doc {
+  :deep(.vp-doc) {
     padding: 1.5rem 2rem !important;
   }
 }
