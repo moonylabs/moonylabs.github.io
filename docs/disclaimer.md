@@ -108,11 +108,8 @@ Regulatory treatment of blockchain technologies and digital assets varies by jur
 
 ---
 
-## 7. Updates and Contact
+## 7. Updates
 
 Moony Labs reserves the right to update this disclaimer at any time. Changes will be posted on this page with the updated date. Continued access to or use of the documentation constitutes acceptance of any such modifications.
 
 **Last updated:** December 16, 2025
-
-**For inquiries, contact:** info@moonylabs.com  
-*Responses are provided for informational purposes only and do not create any relationship, obligation, or duty.*
