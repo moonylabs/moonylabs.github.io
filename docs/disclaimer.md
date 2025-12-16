@@ -55,10 +55,6 @@ Moony Labs makes no representations or warranties, express or implied, regarding
 
 Blockchain technology, including the Solana network and the Moony protocol, involves inherent risks such as volatility, technical failures, cyberattacks, and irreversible transactions. Users should be aware that digital assets like MNY may fluctuate in value or become worthless. Participation is at your own risk, and Moony Labs disclaims all liability for losses or damages.
 
-## Open-Source Nature
-
-The Moony protocol is open-source software licensed under [insert license, e.g., MIT or Apache 2.0]. While Moony Labs deployed the initial version, the code is available for inspection, forking, or modification by anyone. No guarantees are made regarding third-party implementations or forks.
-
 ## Updates to This Disclaimer
 
 Moony Labs reserves the right to update this disclaimer at any time. Changes will be posted on this page with the updated date. Continued use of the documentation or protocol constitutes acceptance of any modifications.
