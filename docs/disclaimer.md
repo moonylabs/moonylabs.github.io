@@ -1,3 +1,8 @@
+---
+layout: page
+aside: false
+---
+
 # Disclaimer
 
 This documentation is provided for informational and educational purposes only. It does not constitute financial, investment, legal, tax, or any other form of advice. Moony is a decentralized protocol and digital asset governed by an immutable smart contract on the Solana blockchain. The protocol operates autonomously and cannot be altered, controlled, or influenced by any party after deployment. No company, organization, or individual is responsible for Moony's performance, value, or outcomes. Participants engage with the Moony protocol at their own risk and are strongly encouraged to conduct independent research, seek professional advice, and exercise caution when interacting with blockchain-based systems.
