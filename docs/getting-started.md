@@ -1,7 +1,7 @@
 # Getting Started
 
 ::: tip click-here-tip
-[View Important Disclaimer](/resources/disclaimer)
+[View Important Disclaimer](/disclaimer)
 :::
 
 ## Tokenomics
