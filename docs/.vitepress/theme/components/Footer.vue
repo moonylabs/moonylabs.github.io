@@ -54,7 +54,7 @@
       <div class="footer-legal">
         <a href="#" @click.prevent>Privacy</a>
         <a href="#" @click.prevent>Terms</a>
-        <a href="#" @click.prevent>Disclaimer</a>
+        <a href="/resources/disclaimer">Disclaimer</a>
       </div>
     </div>
   </footer>

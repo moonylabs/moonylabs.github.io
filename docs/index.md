@@ -29,7 +29,7 @@ layout: home
 </div>
 
 <div class="deployment-footer">
-  <p>Deployed by Moony Labs, LLC.</p>
+  <p>Deployed by <a href="/resources/disclaimer">Moony Labs, LLC</a>.</p>
 </div>
 
 
