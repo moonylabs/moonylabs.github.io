@@ -64,12 +64,19 @@ function shouldShowModal() {
   if (typeof window === 'undefined') return false
   
   // Check route path - VitePress might use different paths
-  const currentPath = route.path || (typeof window !== 'undefined' ? window.location.pathname : '')
+  // Use both route.path and window.location as fallback
+  const routePath = route.path || ''
+  const windowPath = window.location.pathname || ''
+  const currentPath = routePath || windowPath
+  
+  // Check if we're on the home page
   const isHomePage = currentPath === '/' || 
                      currentPath === '/index.html' || 
                      currentPath === '/index' ||
                      currentPath.endsWith('/') ||
-                     (currentPath === '' && typeof window !== 'undefined' && window.location.pathname === '/')
+                     windowPath === '/' ||
+                     windowPath === '/index.html' ||
+                     (currentPath === '' && windowPath === '/')
   
   // Only show on home page
   if (!isHomePage) {
