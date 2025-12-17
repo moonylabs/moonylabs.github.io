@@ -63,8 +63,16 @@ function checkIfAgreed() {
 function shouldShowModal() {
   if (typeof window === 'undefined') return false
   
+  // Check route path - VitePress might use different paths
+  const currentPath = route.path || (typeof window !== 'undefined' ? window.location.pathname : '')
+  const isHomePage = currentPath === '/' || 
+                     currentPath === '/index.html' || 
+                     currentPath === '/index' ||
+                     currentPath.endsWith('/') ||
+                     (currentPath === '' && typeof window !== 'undefined' && window.location.pathname === '/')
+  
   // Only show on home page
-  if (route.path !== '/' && route.path !== '/index.html') {
+  if (!isHomePage) {
     return false
   }
   
@@ -89,13 +97,16 @@ function handleOverlayClick() {
 }
 
 onMounted(() => {
-  if (shouldShowModal()) {
-    showModal.value = true
-    // Prevent body scroll when modal is open
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = 'hidden'
+  // Add a small delay to ensure route is fully initialized
+  setTimeout(() => {
+    if (shouldShowModal()) {
+      showModal.value = true
+      // Prevent body scroll when modal is open
+      if (typeof document !== 'undefined') {
+        document.body.style.overflow = 'hidden'
+      }
     }
-  }
+  }, 100)
 })
 
 // Watch for route changes to show modal on home page
