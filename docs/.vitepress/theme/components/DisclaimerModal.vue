@@ -105,31 +105,44 @@ function handleOverlayClick() {
 }
 
 onMounted(() => {
-  // Add a small delay to ensure route is fully initialized
+  // Add a delay to ensure route is fully initialized and DOM is ready
   setTimeout(() => {
+    console.log('DisclaimerModal mounted, checking if should show...')
+    console.log('Route path:', route.path)
+    console.log('Window path:', typeof window !== 'undefined' ? window.location.pathname : 'N/A')
+    console.log('Has agreed:', checkIfAgreed())
+    
     if (shouldShowModal()) {
+      console.log('Showing disclaimer modal')
       showModal.value = true
       // Prevent body scroll when modal is open
       if (typeof document !== 'undefined') {
         document.body.style.overflow = 'hidden'
       }
+    } else {
+      console.log('Not showing modal - conditions not met')
     }
-  }, 100)
+  }, 300)
 })
 
-// Watch for route changes to show modal on home page
+// Watch for route changes to show modal on docs page
 watch(() => route.path, (newPath) => {
-  if (shouldShowModal()) {
-    showModal.value = true
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = 'hidden'
+  console.log('Route changed to:', newPath)
+  setTimeout(() => {
+    if (shouldShowModal()) {
+      console.log('Showing modal after route change')
+      showModal.value = true
+      if (typeof document !== 'undefined') {
+        document.body.style.overflow = 'hidden'
+      }
+    } else {
+      console.log('Hiding modal after route change')
+      showModal.value = false
+      if (typeof document !== 'undefined') {
+        document.body.style.overflow = ''
+      }
     }
-  } else {
-    showModal.value = false
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = ''
-    }
-  }
+  }, 100)
 })
 </script>
 
