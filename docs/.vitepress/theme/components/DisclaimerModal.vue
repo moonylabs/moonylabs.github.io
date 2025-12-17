@@ -69,17 +69,18 @@ function shouldShowModal() {
   const windowPath = window.location.pathname || ''
   const currentPath = routePath || windowPath
   
-  // Check if we're on the home page
-  const isHomePage = currentPath === '/' || 
-                     currentPath === '/index.html' || 
-                     currentPath === '/index' ||
-                     currentPath.endsWith('/') ||
-                     windowPath === '/' ||
-                     windowPath === '/index.html' ||
-                     (currentPath === '' && windowPath === '/')
+  // Check if we're on the docs page
+  const isDocsPage = currentPath.includes('/docs') || 
+                     currentPath === '/docs' ||
+                     currentPath === '/docs.html' ||
+                     currentPath === '/docs/' ||
+                     windowPath.includes('/docs') ||
+                     windowPath === '/docs' ||
+                     windowPath === '/docs.html' ||
+                     windowPath === '/docs/'
   
-  // Only show on home page
-  if (!isHomePage) {
+  // Only show on docs page
+  if (!isDocsPage) {
     return false
   }
   
