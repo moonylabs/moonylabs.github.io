@@ -1029,10 +1029,6 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
-#### Getting Started
-
-Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
-
 ---
 
 ::: warning
