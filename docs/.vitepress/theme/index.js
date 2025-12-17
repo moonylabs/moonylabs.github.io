@@ -6,6 +6,7 @@ import Footer from './components/Footer.vue'
 import DeploymentInfo from './components/DeploymentInfo.vue'
 import ReserveAddresses from './components/ReserveAddresses.vue'
 import VMAddresses from './components/VMAddresses.vue'
+import DisclaimerModal from './components/DisclaimerModal.vue'
 
 export default {
   extends: DefaultTheme,
