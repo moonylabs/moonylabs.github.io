@@ -1029,31 +1029,6 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
-#### Deployment
-
-The Moony protocol was deployed by Moony Labs, LLC. to the Solana blockchain using infrastructure developed by Flipcash Inc. The Reserve Contract is an immutable smart contract that governs all token issuance, redemption, and pricing according to deterministic rules encoded at deployment.
-
-**Deployment Parameters:**
-- **Maximum Supply:** 21,000,000 MNY tokens (immutable cap)
-- **Bonding Curve Type:** Continuous Exponential Function
-- **Curve Constants:**
-  - Constant a: 11400.230149967394933471
-  - Constant b: 0.000000877175273521
-  - Constant c: 0.000000877175273521
-- **Price Boundaries:** $0.01 USDF (near zero supply) to $1,000,000 USDF (at maximum supply)
-- **Fee Structure:** 0% on purchases, 1% on redemptions
-
-**Contract Code:**
-The Reserve Contract architecture was developed by Flipcash Inc. and is part of the Code Payments Open Code Protocol (OCP). The contract code is maintained in the Code Payments repositories:
-- [OCP Server Repository](https://github.com/code-payments/ocp-server)
-- [Contract Configuration](https://github.com/code-payments/ocp-server/blob/main/pkg/code/config/config.go)
-
-**Deployment Verification:**
-All contract addresses and deployment information are synced from the Code Payments OCP configuration. The deployment is fully on-chain and can be verified on the Solana blockchain through the contract addresses displayed in the documentation.
-
-**Immutable Design:**
-Once deployed, the Reserve Contract cannot be altered, upgraded, or modified. There are no admin keys, upgrade authorities, or governance mechanisms. The protocol operates autonomously according to its immutable smart contract logic.
-
 #### Getting Started
 
 Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
