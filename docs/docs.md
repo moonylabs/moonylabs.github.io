@@ -895,14 +895,6 @@ Some stakeholders contribute through technical development and infrastructure. O
 
 No single stakeholder group holds inherent control over the protocol. Influence within the network arises from adoption, contribution, and voluntary coordination rather than ownership, hierarchy, or governance authority. This structure allows the Moony network to remain open-ended, censorship-resistant, and resilient across changing conditions.
 
-### Participation
-
-The Moony network grows organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
-
-Economic participation flows naturally from stakeholder contributions without requiring coordinated management. As Moony is used, integrated, and circulated, liquidity deepens, utility expands, and real-world demand emerges through voluntary exchange. No single group directs this process. It is the aggregate result of many independent decisions interacting through the same open protocol.
-
-In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
-
 #### Network Contribution
 
 The Moony network is not composed of fixed roles, titles, or permissions. Instead, it is shaped through open, overlapping modes of participation. Individuals and organizations engage with the system in different ways depending on their skills, intent, and context. A single participant may be a user, a developer, a merchant, and a community organizer over the lifetime of their involvement. These identities are not assigned. They emerge naturally through action.
@@ -957,6 +949,14 @@ There is no formal boundary between who is considered a "user" and who is consid
 
 Each of these actions directly strengthens the network. No approval is required to participate. There is no onboarding authority, no application process, and no centralized gatekeeper. Contribution is defined by action, not by credential, status, or affiliation.
 
+### Participation
+
+The Moony network grows organically rather than administratively. Network expansion is not driven by hiring, appointments, corporate strategy, or centrally planned programs. It emerges from the alignment of individual incentives with shared infrastructure. When people find Moony useful, they build around it. When they build around it, others adopt it. When others adopt it, new use cases appear. This feedback loop is circular, not hierarchical.
+
+Economic participation flows naturally from stakeholder contributions without requiring coordinated management. As Moony is used, integrated, and circulated, liquidity deepens, utility expands, and real-world demand emerges through voluntary exchange. No single group directs this process. It is the aggregate result of many independent decisions interacting through the same open protocol.
+
+In this sense, Moony functions less like a platform operated by an organization and more like a shared digital environment. It is not something users are onboarded into. It is something participants step into, shape through use, and carry forward through contribution. The network does not ask for belief in a governing entity. It operates on open participation, transparent rules, and the compounding effects of independent action.
+
 #### Incentive Alignment
 
 Stakeholders benefit from increasing adoption of the Moony network because it drives demand for the underlying asset. As more participants use, integrate, and build with Moony, the network's utility expands, liquidity deepens, and real-world demand grows. This creates a natural incentive structure where stakeholders' individual contributions align with collective network growth. Developers who build integrations see increased usage of their products. Merchants who accept Moony benefit from a growing user base. Users who hold Moony benefit from expanding utility and network effects. This profit mechanism, built into the protocol's economic design, coordinates stakeholder action without requiring centralized direction or governance.
@@ -964,8 +964,6 @@ Stakeholders benefit from increasing adoption of the Moony network because it dr
 The next step belongs to the individual. Through code, conversation, commerce, or community, each action strengthens the network and reinforces Moony's role as a decentralized, internet native form of digital cash.
 
 ### Resources {#resources}
-
-![Placeholder](/placeholder-color.png)
 
 #### Brand Identity {#brand-identity}
 
@@ -1029,8 +1027,39 @@ These resources are provided to make it simple for developers, designers, and co
 [Download Moony Logo Files – Black & White (ZIP)](/moony-logos.zip)
 :::
 
+#### Deployment
+
+The Moony protocol was deployed by Moony Labs, LLC. to the Solana blockchain using infrastructure developed by Flipcash Inc. The Reserve Contract is an immutable smart contract that governs all token issuance, redemption, and pricing according to deterministic rules encoded at deployment.
+
+**Deployment Parameters:**
+- **Maximum Supply:** 21,000,000 MNY tokens (immutable cap)
+- **Bonding Curve Type:** Continuous Exponential Function
+- **Curve Constants:**
+  - Constant a: 11400.230149967394933471
+  - Constant b: 0.000000877175273521
+  - Constant c: 0.000000877175273521
+- **Price Boundaries:** $0.01 USDF (near zero supply) to $1,000,000 USDF (at maximum supply)
+- **Fee Structure:** 0% on purchases, 1% on redemptions
+
+**Contract Code:**
+The Reserve Contract architecture was developed by Flipcash Inc. and is part of the Code Payments Open Code Protocol (OCP). The contract code is maintained in the Code Payments repositories:
+- [OCP Server Repository](https://github.com/code-payments/ocp-server)
+- [Contract Configuration](https://github.com/code-payments/ocp-server/blob/main/pkg/code/config/config.go)
+
+**Deployment Verification:**
+All contract addresses and deployment information are synced from the Code Payments OCP configuration. The deployment is fully on-chain and can be verified on the Solana blockchain through the contract addresses displayed in the documentation.
+
+**Immutable Design:**
+Once deployed, the Reserve Contract cannot be altered, upgraded, or modified. There are no admin keys, upgrade authorities, or governance mechanisms. The protocol operates autonomously according to its immutable smart contract logic.
+
+#### Getting Started
+
+Developers can begin integrating Moony by exploring the Solana ecosystem, understanding SPL token standards, and leveraging existing documentation and community resources. The permissionless nature of Moony means there are no gatekeepers or approval processes - just open innovation and collaboration.
+
 ---
 
 ::: warning
 This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset issued and governed by an immutable smart contract deployed on the Solana blockchain by Moony Labs, LLC. The protocol operates autonomously and cannot be altered or controlled by any party, including Moony Labs, LLC. No company or formal organization is responsible for Moony's performance or value. Participants engage with the Moony protocol at their own discretion and are encouraged to conduct independent research and seek professional advice before interacting with blockchain-based systems.
+
+[View Full Disclaimer](/disclaimer)
 :::
