@@ -55,27 +55,19 @@ function shouldShowModal() {
   const windowPath = window.location.pathname || ''
   const currentPath = routePath || windowPath
   
-  // Check if we're on the home page
-  const isHomePage = currentPath === '/' || 
-                     currentPath === '/index.html' || 
-                     currentPath === '/index' ||
-                     currentPath.endsWith('/') ||
-                     windowPath === '/' ||
-                     windowPath === '/index.html' ||
-                     (currentPath === '' && windowPath === '/')
-  
-  // Check if we're on the docs page
+  // Only show on docs/documentation pages, NOT on home page
   const isDocsPage = currentPath.includes('/docs') || 
                      currentPath === '/docs' ||
                      currentPath === '/docs.html' ||
                      currentPath === '/docs/' ||
+                     currentPath.includes('/documentation') ||
                      windowPath.includes('/docs') ||
                      windowPath === '/docs' ||
                      windowPath === '/docs.html' ||
-                     windowPath === '/docs/'
+                     windowPath === '/docs/' ||
+                     windowPath.includes('/documentation')
   
-  // Show on both home page and docs page
-  return isHomePage || isDocsPage
+  return isDocsPage
 }
 
 function handleDismiss() {
@@ -87,27 +79,72 @@ function handleDismiss() {
   
   // Restore body scroll
   document.body.style.overflow = ''
+  
+  // Check if there's a pending navigation (from "View Docs" button click)
+  const pendingNav = sessionStorage.getItem('moony_disclaimer_pending_nav')
+  if (pendingNav) {
+    sessionStorage.removeItem('moony_disclaimer_pending_nav')
+    // Navigate to the docs page
+    if (typeof window !== 'undefined' && window.location) {
+      window.location.href = pendingNav
+    }
+  }
 }
 
 function handleOverlayClick() {
   // Don't allow closing by clicking outside - user must click button
 }
 
-onMounted(() => {
+function showModalIfNeeded() {
   // Check if dismissed in this session
   if (typeof window !== 'undefined' && sessionStorage.getItem('moony_disclaimer_dismissed') === 'true') {
     return
   }
   
+  if (shouldShowModal()) {
+    showModal.value = true
+    // Prevent body scroll when modal is open
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = 'hidden'
+    }
+  }
+}
+
+onMounted(() => {
+  // Intercept "View Docs" button clicks
+  if (typeof document !== 'undefined') {
+    // Wait for DOM to be ready
+    setTimeout(() => {
+      // Find all "View Docs" links/buttons
+      const viewDocsLinks = document.querySelectorAll('a[href*="/docs"], a[href*="/documentation"]')
+      viewDocsLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // Check if already dismissed
+          if (sessionStorage.getItem('moony_disclaimer_dismissed') === 'true') {
+            return // Allow navigation
+          }
+          
+          // Prevent default navigation
+          e.preventDefault()
+          
+          // Show modal
+          showModal.value = true
+          document.body.style.overflow = 'hidden'
+          
+          // Store the target URL to navigate after agreement
+          const targetUrl = link.getAttribute('href')
+          if (targetUrl) {
+            // Store target for navigation after dismissal
+            sessionStorage.setItem('moony_disclaimer_pending_nav', targetUrl)
+          }
+        })
+      })
+    }, 500)
+  }
+  
   // Add a delay to ensure route is fully initialized
   setTimeout(() => {
-    if (shouldShowModal()) {
-      showModal.value = true
-      // Prevent body scroll when modal is open
-      if (typeof document !== 'undefined') {
-        document.body.style.overflow = 'hidden'
-      }
-    }
+    showModalIfNeeded()
   }, 300)
 })
 
