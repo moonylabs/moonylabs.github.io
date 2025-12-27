@@ -6,7 +6,6 @@ import Footer from './components/Footer.vue'
 import DeploymentInfo from './components/DeploymentInfo.vue'
 import ReserveAddresses from './components/ReserveAddresses.vue'
 import VMAddresses from './components/VMAddresses.vue'
-import DisclaimerModal from './components/DisclaimerModal.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,10 +14,6 @@ export default {
       'layout-bottom': () => {
         // Don't show footer on any page
         return null
-      },
-      'layout-top': () => {
-        // Add disclaimer modal at the top level
-        return h(DisclaimerModal)
       }
     })
   },
@@ -27,7 +22,6 @@ export default {
     app.component('DeploymentInfo', DeploymentInfo)
     app.component('ReserveAddresses', ReserveAddresses)
     app.component('VMAddresses', VMAddresses)
-    app.component('DisclaimerModal', DisclaimerModal)
     
     // Add copy to clipboard functionality
     if (typeof window !== 'undefined') {
