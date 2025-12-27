@@ -1062,6 +1062,6 @@ Developers can begin integrating Moony by exploring the Solana ecosystem, unders
 This documentation is for informational purposes only and does not constitute investment advice. Moony is a decentralized digital asset governed by an immutable smart contract. The protocol operates autonomously and cannot be altered or controlled by any party. Participants engage at their own discretion and risk.
 
 <div style="margin-top: 1rem;">
-<a href="/disclaimer" style="display: inline-block; background: #3b82f6; color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: background-color 0.2s;" onmouseover="this.style.background='#2563eb'" onmouseout="this.style.background='#3b82f6'">View Full Disclaimer</a>
+<a href="/disclaimer" style="color: #3b82f6; text-decoration: none; font-weight: 500; transition: all 0.2s ease;" onmouseover="this.style.color='#2563eb'; this.style.textDecoration='underline'; this.querySelector('span').style.transform='translateX(4px)'" onmouseout="this.style.color='#3b82f6'; this.style.textDecoration='none'; this.querySelector('span').style.transform='translateX(0)'">View Full Disclaimer <span style="display: inline-block; transition: transform 0.2s ease;">→</span></a>
 </div>
 :::
